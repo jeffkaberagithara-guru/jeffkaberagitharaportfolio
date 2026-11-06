@@ -1,12 +1,12 @@
 services:
   - type: web
     name: jeff-kabera-portfolio
-    runtime: static
-    buildCommand: npm run build
-    staticPublishPath: ./dist
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
     pullRequestPreviewsEnabled: true
-    domains:
-      - kabera-portfolio.onrender.com
     envVars:
       - key: NODE_VERSION
         value: 22
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://kabera-portfolio.onrender.com
