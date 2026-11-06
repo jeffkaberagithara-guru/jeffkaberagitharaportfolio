@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kabera-portfolio.onrender.com/sitemap.xml
