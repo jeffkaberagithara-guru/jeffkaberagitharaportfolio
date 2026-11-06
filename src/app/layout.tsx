@@ -42,6 +42,8 @@ export const metadata: Metadata = {
   creator: siteConfig.name,
   keywords: [
     "Jeff Kabera Githara",
+    "JKG monogram",
+    "brand identity Nairobi",
     "web developer Nairobi",
     "software engineer Kenya",
     "product engineer",
@@ -79,13 +81,23 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#faf9f5",
+  themeColor: "#f7f5ef",
   colorScheme: "light",
   width: "device-width",
   initialScale: 1,
@@ -96,6 +108,7 @@ const structuredData = {
   "@type": "Person",
   name: siteConfig.name,
   jobTitle: siteConfig.role,
+  slogan: siteConfig.brand.tagline,
   url: siteConfig.url,
   email: `mailto:${siteConfig.email}`,
   address: {
@@ -109,6 +122,8 @@ const structuredData = {
     "Software engineering",
     "Product design",
     "Design systems",
+    "Brand identity",
+    "Design engineering",
     "Next.js",
     "React",
     "TypeScript",

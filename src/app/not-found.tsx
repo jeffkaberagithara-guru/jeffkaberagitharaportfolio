@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Monogram } from "@/components/monogram";
 
 export default function NotFound() {
   return (
@@ -26,11 +27,14 @@ export default function NotFound() {
             </Link>
           </div>
         </div>
-        <p className="mono not-found__note">
-          404 / Not found
-          <br />
-          Nairobi, Kenya
-        </p>
+        <div className="not-found__side">
+          <Monogram className="not-found__mark" title="JKG monogram" />
+          <p className="mono not-found__note">
+            404 / Not found
+            <br />
+            Nairobi, Kenya
+          </p>
+        </div>
       </div>
     </div>
   );

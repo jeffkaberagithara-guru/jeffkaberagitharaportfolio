@@ -1,26 +1,16 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowLink } from "@/components/arrow-link";
 import { Folio } from "@/components/folio";
+import { Monogram } from "@/components/monogram";
 import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Colophon",
   description:
-    "How this portfolio was designed and built: typography, palette, structure and the honest boundaries of the build.",
+    "How this portfolio was designed and built: brand identity, typography, palette, structure and the honest boundaries of the build.",
   alternates: { canonical: "/colophon" },
 };
-
-const palette = [
-  { name: "Paper", value: "#FAF9F5" },
-  { name: "Paper soft", value: "#F0EFEA" },
-  { name: "Ink", value: "#1B1C1A" },
-  { name: "Ink secondary", value: "#5B5E67" },
-  { name: "Cobalt", value: "#3850AF" },
-  { name: "Cobalt highlight", value: "#5269C9" },
-  { name: "Line", value: "#DFDED7" },
-  { name: "Muted", value: "#898A87" },
-  { name: "Gallery white", value: "#FFFFFF" },
-];
 
 export default function ColophonPage() {
   return (
@@ -37,13 +27,90 @@ export default function ColophonPage() {
             <div>
               <p className="page-hero__lede">
                 This edition is an editorial portfolio built as a small design
-                system: one paper palette, three typefaces, a cobalt accent and a
-                deliberate grid.
+                system: a bone paper palette, three typefaces, slate and copper
+                accents, and a deliberate grid.
               </p>
             </div>
           </div>
         </div>
       </header>
+
+      <section className="brand-identity">
+        <div className="shell">
+          <div className="brand-identity__intro">
+            <div>
+              <Folio>00 / Identity</Folio>
+              <h2 className="display brand-identity__title">
+                A brand for <em>thoughtful systems.</em>
+              </h2>
+            </div>
+            <div>
+              <p className="brand-identity__lede">
+                The identity is built around the JKG monogram: a compact,
+                engineered mark that carries the same logic as the work —
+                structure first, expression second. The system pairs warm bone
+                paper with charcoal ink, slate structure and a copper signal.
+              </p>
+              <p className="mono brand-identity__tagline">
+                {siteConfig.brand.tagline}
+              </p>
+            </div>
+          </div>
+
+          <div className="brand-board-grid">
+            <figure className="brand-board brand-board--wide">
+              <Image
+                alt="Brand strategy board with the JKG monogram, vision, goals and positioning"
+                height={768}
+                sizes="(max-width: 820px) 100vw, 92rem"
+                src={siteConfig.brand.assets.strategy}
+                width={1408}
+              />
+              <figcaption>
+                <span>Brand strategy</span>
+                <span>Vision / goals / positioning</span>
+              </figcaption>
+            </figure>
+            <figure className="brand-board">
+              <Image
+                alt="Brand application board showing the wordmark, tagline and palette"
+                height={768}
+                sizes="(max-width: 820px) 100vw, 46rem"
+                src={siteConfig.brand.assets.applications}
+                width={1408}
+              />
+              <figcaption>
+                <span>Applications</span>
+                <span>Wordmark / tagline / palette</span>
+              </figcaption>
+            </figure>
+            <figure className="brand-board">
+              <Image
+                alt="Monogram exploration board showing the JKG mark in use"
+                height={768}
+                sizes="(max-width: 820px) 100vw, 46rem"
+                src={siteConfig.brand.assets.explorations}
+                width={1408}
+              />
+              <figcaption>
+                <span>Monogram</span>
+                <span>JKG / construction / usage</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="brand-lockup">
+            <Monogram className="brand-lockup__mark" title="JKG monogram" />
+            <div>
+              <p className="mono brand-about__label">Primary mark</p>
+              <p className="brand-lockup__name">Jeff Kabera Githara</p>
+              <p className="brand-lockup__tagline">
+                {siteConfig.brand.tagline}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="shell colophon-grid">
         <section className="colophon-block">
@@ -69,12 +136,12 @@ export default function ColophonPage() {
         <section className="colophon-block">
           <h2 className="colophon-block__title">Palette</h2>
           <p>
-            Warm paper, near-black ink and a single cobalt accent. Project covers
-            extend the palette by discipline so the index reads as a collection
-            rather than a list.
+            Bone paper, charcoal ink, slate structure and a copper signal.
+            Project covers extend the palette by discipline so the index reads
+            as a collection rather than a list.
           </p>
           <div className="swatches">
-            {palette.map((colour) => (
+            {siteConfig.brand.palette.map((colour) => (
               <div
                 className="swatch"
                 key={colour.name}

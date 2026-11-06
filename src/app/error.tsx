@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { Monogram } from "@/components/monogram";
 
 export default function ErrorPage({
   error,
@@ -29,7 +30,11 @@ export default function ErrorPage({
             or return to the work index.
           </p>
           <div className="not-found__actions">
-            <button className="button button--solid" onClick={reset} type="button">
+            <button
+              className="button button--solid"
+              onClick={reset}
+              type="button"
+            >
               Try again
             </button>
             <Link className="button button--outline" href="/work">
@@ -37,15 +42,18 @@ export default function ErrorPage({
             </Link>
           </div>
         </div>
-        <p className="mono not-found__note">
-          Error / Client boundary
-          {error.digest ? (
-            <>
-              <br />
-              Ref {error.digest}
-            </>
-          ) : null}
-        </p>
+        <div className="not-found__side">
+          <Monogram className="not-found__mark" title="JKG monogram" />
+          <p className="mono not-found__note">
+            Error / Client boundary
+            {error.digest ? (
+              <>
+                <br />
+                Ref {error.digest}
+              </>
+            ) : null}
+          </p>
+        </div>
       </div>
     </div>
   );

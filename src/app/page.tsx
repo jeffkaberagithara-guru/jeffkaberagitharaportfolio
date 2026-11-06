@@ -39,6 +39,7 @@ export default function HomePage() {
                   under <em>real use.</em>
                 </span>
               </h1>
+              <p className="mono hero__tagline">{siteConfig.brand.tagline}</p>
               <p className="hero__lede">
                 I&rsquo;m <strong>Jeff Kabera Githara</strong>, a web developer
                 and software engineer in Nairobi. I design and build product
@@ -103,11 +104,7 @@ export default function HomePage() {
           />
           <div className="home-work__grid">
             {homeProjects.map((project, index) => (
-              <Reveal
-                delay={(index % 2) * 0.08}
-                key={project.slug}
-                y={30}
-              >
+              <Reveal delay={(index % 2) * 0.08} key={project.slug} y={30}>
                 <ProjectCard index={index} project={project} />
               </Reveal>
             ))}
@@ -190,9 +187,13 @@ export default function HomePage() {
             <div className="journey-preview">
               {milestones.slice(0, 4).map((milestone) => (
                 <article className="journey-preview__item" key={milestone.id}>
-                  <p className="mono journey-preview__year">{milestone.period}</p>
+                  <p className="mono journey-preview__year">
+                    {milestone.period}
+                  </p>
                   <h3 className="journey-preview__title">{milestone.title}</h3>
-                  <p className="journey-preview__summary">{milestone.summary}</p>
+                  <p className="journey-preview__summary">
+                    {milestone.summary}
+                  </p>
                 </article>
               ))}
             </div>

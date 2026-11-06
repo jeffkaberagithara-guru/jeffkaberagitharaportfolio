@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowLink } from "@/components/arrow-link";
 import { Folio } from "@/components/folio";
+import { Monogram } from "@/components/monogram";
 import { milestones } from "@/content/journey";
 import { capabilities, toolkit } from "@/content/practice";
 import { featuredProjects } from "@/content/projects";
@@ -19,7 +20,11 @@ export default function CvPage() {
       <div className="cv-toolbar">
         <Folio>Curriculum vitae / 2026</Folio>
         <div className="cv-toolbar__actions">
-          <a className="button button--outline" href={siteConfig.cvPath} download>
+          <a
+            className="button button--outline"
+            href={siteConfig.cvPath}
+            download
+          >
             Download PDF
           </a>
           <ArrowLink href="/contact">Contact</ArrowLink>
@@ -28,13 +33,20 @@ export default function CvPage() {
 
       <div className="cv">
         <aside className="cv__side">
+          <Monogram className="cv__mark" title="JKG monogram" />
           <p className="cv__name">{siteConfig.name}</p>
           <p className="cv__role">{siteConfig.role}</p>
+          <p className="mono cv__tagline">{siteConfig.brand.tagline}</p>
           <div className="cv__contact">
             <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             <span>{siteConfig.location}</span>
             {siteConfig.socials.map((social) => (
-              <a href={social.href} key={social.href} rel="noreferrer" target="_blank">
+              <a
+                href={social.href}
+                key={social.href}
+                rel="noreferrer"
+                target="_blank"
+              >
                 {social.label}
               </a>
             ))}
@@ -45,10 +57,10 @@ export default function CvPage() {
           <section className="cv-block">
             <p className="mono cv-block__title">Profile</p>
             <p>
-              Web developer and software engineer working between product
-              design and engineering. I build considered interfaces and the
-              typed, permission-aware systems behind them, with a focus on
-              products used in real operational contexts in Kenya.
+              Web developer and software engineer working between product design
+              and engineering. I build considered interfaces and the typed,
+              permission-aware systems behind them, with a focus on products
+              used in real operational contexts in Kenya.
             </p>
             <p>
               Recent work spans clinical records, logistics, matatu finance,
@@ -82,7 +94,9 @@ export default function CvPage() {
               <article className="cv-role" key={capability.number}>
                 <div className="cv-role__head">
                   <h2 className="cv-role__title">{capability.title}</h2>
-                  <span className="mono cv-role__period">{capability.number}</span>
+                  <span className="mono cv-role__period">
+                    {capability.number}
+                  </span>
                 </div>
                 <p>{capability.description}</p>
               </article>
@@ -95,7 +109,9 @@ export default function CvPage() {
               <article className="cv-role" key={milestone.id}>
                 <div className="cv-role__head">
                   <h2 className="cv-role__title">{milestone.title}</h2>
-                  <span className="mono cv-role__period">{milestone.period}</span>
+                  <span className="mono cv-role__period">
+                    {milestone.period}
+                  </span>
                 </div>
                 <p>{milestone.summary}</p>
               </article>
@@ -119,9 +135,9 @@ export default function CvPage() {
           <section className="cv-block">
             <p className="mono cv-block__title">Note</p>
             <p>
-              This is a practice profile. It lists project work and
-              capabilities rather than employers or qualifications. The PDF
-              version is the canonical document for applications.
+              This is a practice profile. It lists project work and capabilities
+              rather than employers or qualifications. The PDF version is the
+              canonical document for applications.
             </p>
           </section>
         </main>

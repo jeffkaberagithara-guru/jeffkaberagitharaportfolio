@@ -12,6 +12,9 @@ export function SiteFooter() {
         <div className="site-footer__top">
           <div className="site-footer__identity">
             <Monogram className="site-footer__mark" />
+            <p className="mono site-footer__tagline">
+              {siteConfig.brand.tagline}
+            </p>
             <p className="site-footer__statement display">
               Building interfaces with <em>consequence</em>.
             </p>
@@ -19,7 +22,10 @@ export function SiteFooter() {
               Open to employment, focused freelance work and thoughtful
               collaboration.
             </p>
-            <a className="site-footer__email" href={`mailto:${siteConfig.email}`}>
+            <a
+              className="site-footer__email"
+              href={`mailto:${siteConfig.email}`}
+            >
               {siteConfig.email}
               <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.4} />
             </a>
@@ -83,8 +89,8 @@ export function SiteFooter() {
             &copy; {new Date().getFullYear()} {siteConfig.name}
           </p>
           <p>
-            Designed and built in Nairobi. Set in Newsreader, Instrument Sans and
-            Spline Sans Mono.
+            Designed and built in Nairobi. Set in Newsreader, Instrument Sans
+            and Spline Sans Mono.
           </p>
           <Link href="/colophon">Colophon</Link>
         </div>

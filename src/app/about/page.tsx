@@ -83,7 +83,9 @@ export default function AboutPage() {
             </div>
             <div className="about-aside__row">
               <dt>Focus</dt>
-              <dd>Product interfaces, design systems and full-stack products</dd>
+              <dd>
+                Product interfaces, design systems and full-stack products
+              </dd>
             </div>
             <div className="about-aside__row">
               <dt>Current</dt>
@@ -113,7 +115,42 @@ export default function AboutPage() {
       <section className="section">
         <div className="shell">
           <SectionHeading
-            folio="01 / Principles"
+            folio="01 / Brand"
+            intro="The practice has a point of view: clarity in the interface, rigour in the system, and enough restraint to let the work speak for itself."
+            title={
+              <>
+                Thoughtful interfaces. Well-engineered <em>systems.</em>
+              </>
+            }
+          />
+          <div className="brand-about__grid">
+            <article className="brand-about__card">
+              <p className="mono brand-about__label">Mission</p>
+              <h3>Make complex digital work legible and trustworthy.</h3>
+              <p>{siteConfig.brand.mission}</p>
+            </article>
+            <article className="brand-about__card">
+              <p className="mono brand-about__label">Vision</p>
+              <h3>Digital ecosystems that elevate human experience.</h3>
+              <p>{siteConfig.brand.vision}</p>
+            </article>
+          </div>
+          <div className="brand-pillars">
+            {siteConfig.brand.pillars.map((pillar) => (
+              <article className="brand-pillar" key={pillar.number}>
+                <p className="mono brand-pillar__number">{pillar.number}</p>
+                <h3 className="brand-pillar__title">{pillar.title}</h3>
+                <p className="brand-pillar__body">{pillar.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <SectionHeading
+            folio="02 / Principles"
             intro="Five working beliefs that shape how I frame problems, choose trade-offs and decide what a product should refuse to pretend."
             title={
               <>
@@ -136,7 +173,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="shell">
           <SectionHeading
-            folio="02 / Toolkit"
+            folio="03 / Toolkit"
             intro="Tools change. The underlying concerns — structure, state, access, clarity — do not."
             title={
               <>
@@ -162,7 +199,7 @@ export default function AboutPage() {
       <section className="contact-cta">
         <div className="shell contact-cta__grid">
           <div>
-            <Folio>03 / Contact</Folio>
+            <Folio>04 / Contact</Folio>
             <h2 className="display contact-cta__title">
               Let&rsquo;s make something that <em>holds.</em>
             </h2>

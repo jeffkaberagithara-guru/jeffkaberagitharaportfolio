@@ -27,6 +27,9 @@ export default function ContactPage() {
                 A good brief can be short. Tell me what you are building, what
                 is difficult about it and what a useful outcome looks like.
               </p>
+              <p className="mono brand-identity__tagline">
+                {siteConfig.brand.tagline}
+              </p>
             </div>
           </div>
         </div>
@@ -34,9 +37,7 @@ export default function ContactPage() {
 
       <div className="shell contact-layout">
         <div className="contact-intro">
-          <p className="display">
-            Three useful ways to begin.
-          </p>
+          <p className="display">Three useful ways to begin.</p>
           <p>
             I read every message directly. There is no newsletter, no CRM
             sequence and no automated sales process.
