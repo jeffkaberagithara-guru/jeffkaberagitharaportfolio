@@ -5,14 +5,24 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Next.js
+.next
+out
+next-env.d.ts
+
+# Local environment
+.env
+.env*.local
+
+# Build and editor artefacts
 dist
 dist-ssr
-*.local
-
-# Editor directories and files
+*.tsbuildinfo
+.vercel
 .vscode/*
 !.vscode/extensions.json
 .idea
