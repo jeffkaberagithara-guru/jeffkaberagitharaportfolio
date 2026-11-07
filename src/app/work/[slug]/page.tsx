@@ -10,6 +10,7 @@ import {
   getAdjacentProjects,
   getProject,
 } from "@/content/projects";
+import { siteConfig } from "@/content/site";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -34,9 +35,20 @@ export async function generateMetadata({
     description: project.description,
     alternates: { canonical: `/work/${project.slug}` },
     openGraph: {
+      type: "article",
+      locale: "en_KE",
+      url: `/work/${project.slug}`,
+      siteName: siteConfig.name,
       title: `${project.title} — ${categoryLabels[project.category]}`,
       description: project.description,
-      type: "article",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${project.title} — ${siteConfig.name}`,
+        },
+      ],
     },
   };
 }
