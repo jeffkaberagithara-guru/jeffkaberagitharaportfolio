@@ -240,12 +240,24 @@ em {
 /* ---------- Header ---------- */
 
 .site-header {
-  backdrop-filter: blur(16px);
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+/* The frosted panel lives on a pseudo-element: a backdrop-filter on the
+   header itself would make it the containing block for the fixed-position
+   mobile navigation, collapsing that panel to the height of the bar. */
+.site-header::before {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
 }
 
 .site-header__inner {
@@ -371,6 +383,7 @@ em {
   inset: var(--header-height) 0 0;
   opacity: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
   pointer-events: none;
   position: fixed;
   transform: translateY(-1rem);
