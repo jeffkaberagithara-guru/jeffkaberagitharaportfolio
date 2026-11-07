@@ -34,7 +34,7 @@ export default function CvPage() {
       <div className="cv">
         <aside className="cv__side">
           <Monogram className="cv__mark" title="JKG monogram" />
-          <p className="cv__name">{siteConfig.name}</p>
+          <h1 className="cv__name">{siteConfig.name}</h1>
           <p className="cv__role">{siteConfig.role}</p>
           <p className="mono cv__tagline">{siteConfig.brand.tagline}</p>
           <div className="cv__contact">
@@ -53,7 +53,7 @@ export default function CvPage() {
           </div>
         </aside>
 
-        <main className="cv__main">
+        <div className="cv__main">
           <section className="cv-block">
             <p className="mono cv-block__title">Profile</p>
             <p>
@@ -140,7 +140,7 @@ export default function CvPage() {
               canonical document for applications.
             </p>
           </section>
-        </main>
+        </div>
       </div>
     </div>
   );
