@@ -7,6 +7,7 @@
   --charcoal: #1b1b19;
   --slate: #2e4056;
   --copper: #b87545;
+  --copper-ink: #8f5527;
   --paper: var(--bone);
   --paper-soft: var(--parchment);
   --gallery-white: #ffffff;
@@ -16,7 +17,7 @@
   --line-strong: #c5c0b3;
   --cobalt: var(--slate);
   --cobalt-highlight: var(--copper);
-  --muted: #8d887e;
+  --muted: #6f6a60;
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
   --shell: 92rem;
   --header-height: 5.25rem;
@@ -620,7 +621,7 @@ em {
 }
 
 .hero__tagline {
-  color: var(--copper);
+  color: var(--copper-ink);
   margin-top: 1.4rem;
 }
 
@@ -1269,9 +1270,9 @@ em {
 
 .site-footer__bottom {
   border-top: 1px solid rgba(250, 249, 245, 0.16);
-  color: rgba(250, 249, 245, 0.45);
+  color: rgba(250, 249, 245, 0.55);
   display: flex;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   gap: 1.5rem;
   justify-content: space-between;
   margin-top: 2.5rem;
@@ -1801,7 +1802,7 @@ em {
 }
 
 .brand-about__label {
-  color: var(--copper);
+  color: var(--copper-ink);
   margin-bottom: 1.1rem;
 }
 
@@ -1839,7 +1840,7 @@ em {
 }
 
 .brand-pillar__number {
-  color: var(--copper);
+  color: var(--copper-ink);
 }
 
 .brand-pillar__title {
@@ -2272,7 +2273,7 @@ em {
 }
 
 .cv__tagline {
-  color: var(--copper);
+  color: var(--copper-ink);
   margin-top: 1rem;
   max-width: 15rem;
 }
@@ -2415,7 +2416,7 @@ em {
 }
 
 .brand-identity__tagline {
-  color: var(--copper);
+  color: var(--copper-ink);
   margin-top: 1rem;
 }
 
