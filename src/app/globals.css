@@ -2733,7 +2733,7 @@ em {
   }
 
   .hero__meta-item--end {
-    display: none;
+    text-align: left;
   }
 
   .section-heading__side {
@@ -2824,10 +2824,6 @@ em {
   .hero__meta {
     gap: 1rem;
     grid-template-columns: 1fr;
-  }
-
-  .hero__meta-item:nth-child(2) {
-    display: none;
   }
 
   .contact-form__row {
