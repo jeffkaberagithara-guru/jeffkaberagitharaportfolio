@@ -122,7 +122,7 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
         </div>
       )}
 
-      {hasFilters ? (
+      {hasFilters && filtered.length > 0 ? (
         <button
           className="work-explorer__reset mono"
           onClick={() => {
