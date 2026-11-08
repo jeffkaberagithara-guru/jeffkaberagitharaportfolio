@@ -2095,7 +2095,7 @@ em {
 .field label {
   color: var(--ink-secondary);
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
