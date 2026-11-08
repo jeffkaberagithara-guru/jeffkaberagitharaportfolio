@@ -2146,7 +2146,7 @@ em {
 
 .contact-form__hint {
   color: var(--muted);
-  font-size: 0.6rem;
+  font-size: 0.66rem;
 }
 
 .contact-form__error {
