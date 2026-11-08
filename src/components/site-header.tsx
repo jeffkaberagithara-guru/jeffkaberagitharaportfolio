@@ -39,8 +39,10 @@ export function SiteHeader() {
         >
           <Monogram className="site-header__mark" />
           <span className="site-header__name">
-            <span>Jeff Kabera</span>
-            <span className="site-header__surname">Githara</span>
+            <span className="site-header__initials">
+              {siteConfig.shortName}
+            </span>
+            <span className="site-header__fullname">{siteConfig.name}</span>
           </span>
         </Link>
 

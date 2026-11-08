@@ -81,7 +81,7 @@ export function SiteFooter() {
         </div>
 
         <p aria-hidden="true" className="site-footer__wordmark display">
-          Kabera Githara
+          {siteConfig.shortName}
         </p>
 
         <div className="site-footer__bottom mono">

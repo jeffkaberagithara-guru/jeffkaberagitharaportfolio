@@ -103,6 +103,7 @@ export default function ColophonPage() {
             <Monogram className="brand-lockup__mark" title="JKG monogram" />
             <div>
               <p className="mono brand-about__label">Primary mark</p>
+              <p className="brand-lockup__initials">{siteConfig.shortName}</p>
               <p className="brand-lockup__name">Jeff Kabera Githara</p>
               <p className="brand-lockup__tagline">
                 {siteConfig.brand.tagline}
