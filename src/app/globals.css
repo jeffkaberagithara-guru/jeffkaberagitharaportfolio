@@ -1389,7 +1389,7 @@ em {
 
 .filter-chip__count {
   color: var(--muted);
-  font-size: 0.58rem;
+  font-size: 0.64rem;
 }
 
 .filter-chip[aria-pressed="true"] .filter-chip__count {
