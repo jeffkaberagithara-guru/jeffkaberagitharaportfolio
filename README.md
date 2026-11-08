@@ -1,8 +1,8 @@
-# Jeff Kabera Githara — Portfolio
+# jeffkaberagitharaportfolio
 
 An editorial portfolio for **Jeff Kabera Githara**, a web developer and software engineer in Nairobi. Built with the **Next.js App Router**, **TypeScript**, **Tailwind CSS v4**, **Motion**, **Lucide** and **Zod**.
 
-Live: [kabera-portfolio.onrender.com](https://kabera-portfolio.onrender.com)
+Live: [jeffkaberagitharaportfolio.onrender.com](https://jeffkaberagitharaportfolio.onrender.com)
 
 ## What is here
 
@@ -36,7 +36,7 @@ npm run start
 Copy `.env.example` to `.env.local`.
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://kabera-portfolio.onrender.com
+NEXT_PUBLIC_SITE_URL=https://jeffkaberagitharaportfolio.onrender.com
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=jeffkaberagithara@gmail.com
 CONTACT_FROM_EMAIL=portfolio@your-verified-domain.com
