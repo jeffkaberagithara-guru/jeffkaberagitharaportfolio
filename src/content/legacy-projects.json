@@ -365,7 +365,7 @@
       "featured": true
     },
     {
-      "name": "portfolio-website",
+      "name": "jeffkaberagitharaportfolio",
       "title": "Portfolio Website",
       "description": "This site — a high-performance, fully responsive personal portfolio built with React 19, Tailwind CSS v4 and Framer Motion, featuring code-split sections, SEO and accessibility.",
       "technologies": [
@@ -375,8 +375,8 @@
         "Vite"
       ],
       "year": 2026,
-      "live": "https://kabera-portfolio.onrender.com",
-      "code": "https://github.com/jeffkaberagithara-guru/portfolio-website",
+      "live": "https://jeffkaberagitharaportfolio.onrender.com",
+      "code": "https://github.com/jeffkaberagithara-guru/jeffkaberagitharaportfolio",
       "isPrivate": false,
       "featured": true
     },

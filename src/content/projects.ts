@@ -533,7 +533,7 @@ const legacyOrder = [
   "next-test",
   "external-library",
   "capera",
-  "portfolio-website",
+  "jeffkaberagitharaportfolio",
 ];
 
 const allLegacy = [...legacyProjects].sort((a, b) => {
@@ -546,7 +546,7 @@ const allLegacy = [...legacyProjects].sort((a, b) => {
 });
 
 const legacyPortfolio = allLegacy.find(
-  (project) => project.slug === "portfolio-website",
+  (project) => project.slug === "jeffkaberagitharaportfolio",
 );
 if (legacyPortfolio) {
   legacyPortfolio.status = "Archive";
