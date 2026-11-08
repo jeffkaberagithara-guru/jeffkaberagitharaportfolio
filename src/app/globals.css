@@ -2525,7 +2525,7 @@ em {
 .swatch {
   border: 1px solid var(--line);
   font-family: var(--font-mono);
-  font-size: 0.55rem;
+  font-size: 0.62rem;
   letter-spacing: 0.08em;
   padding-top: 4rem;
   text-transform: uppercase;
