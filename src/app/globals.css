@@ -1649,7 +1649,7 @@ em {
   border: 1px solid var(--line);
   border-radius: 999px;
   font-family: var(--font-mono);
-  font-size: 0.58rem;
+  font-size: 0.64rem;
   letter-spacing: 0.08em;
   padding: 0.3rem 0.55rem;
   text-transform: uppercase;
