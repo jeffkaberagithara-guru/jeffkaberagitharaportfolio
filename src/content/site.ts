@@ -7,7 +7,8 @@ export const siteConfig = {
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "jeffkaberagithara@gmail.com",
   cvPath: "/jeff-kabera-githara-cv.pdf",
   url:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://kabera-portfolio.onrender.com",
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://jeffkaberagitharaportfolio.onrender.com",
   description:
     "Jeff Kabera Githara is a web developer and software engineer in Nairobi, Kenya. Thoughtful interfaces, well-engineered systems — product work built to hold up under real use.",
   brand: {
