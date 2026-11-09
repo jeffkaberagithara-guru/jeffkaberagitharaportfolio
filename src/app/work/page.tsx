@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Folio } from "@/components/folio";
 import { WorkExplorer } from "@/components/work-explorer";
-import { allProjects, categories, categoryLabels } from "@/content/projects";
+import { allProjects, categories } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -45,8 +45,7 @@ export default function WorkPage() {
               <strong>{liveCount}</strong> live links
             </span>
             <span>
-              <strong>{categoryLabels.product}</strong> through{" "}
-              <strong>{categoryLabels.experiments}</strong>
+              <strong>Nairobi</strong>, Kenya
             </span>
           </div>
         </div>
