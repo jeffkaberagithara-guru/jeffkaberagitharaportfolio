@@ -1,11 +1,7 @@
 import legacyData from "./legacy-projects.json";
 
 export type ProjectCategory =
-  | "product"
-  | "client"
-  | "systems"
-  | "mobile"
-  | "experiments";
+  "product" | "client" | "systems" | "mobile" | "experiments";
 
 export type ProjectStatus =
   | "Live"
@@ -81,7 +77,14 @@ const newProjects: Project[] = [
     status: "Prototype",
     role: "Product design and frontend engineering",
     featured: true,
-    links: [],
+    links: [
+      {
+        label: "Live site",
+        href: "https://githara-works.vercel.app",
+        kind: "live",
+      },
+      { label: "Source", href: github("githara-works"), kind: "code" },
+    ],
     caseStudy: {
       overview:
         "Githara Works is a frontend prototype for a small architecture practice. It explores how briefs, drawing revisions, client decisions, fees and approval records could live in one calm, connected workspace instead of five disconnected tools.",
@@ -124,7 +127,14 @@ const newProjects: Project[] = [
     status: "Site build",
     role: "Design and full-stack web development",
     featured: true,
-    links: [{ label: "Source", href: github("kabera-kin"), kind: "code" }],
+    links: [
+      {
+        label: "Live site",
+        href: "https://kabera-kin.vercel.app",
+        kind: "live",
+      },
+      { label: "Source", href: github("kabera-kin"), kind: "code" },
+    ],
     caseStudy: {
       overview:
         "Kabera Kin is a multi-page site for a Kenyan animal welfare sanctuary and civic registry. It covers adoption, fostering, rescue reporting, field notes and a medical fund in one coherent public experience.",
@@ -166,6 +176,11 @@ const newProjects: Project[] = [
     role: "Product design and full-stack development",
     featured: true,
     links: [
+      {
+        label: "Live site",
+        href: "https://tradebridge-gamma.vercel.app",
+        kind: "live",
+      },
       { label: "Source", href: github("tradebridge"), kind: "code" },
     ],
     caseStudy: {
@@ -207,10 +222,8 @@ const newProjects: Project[] = [
     year: 2026,
     status: "Site build",
     role: "Art direction and full-stack development",
-    featured: true,
-    links: [
-      { label: "Source", href: github("kinga-pest-care"), kind: "code" },
-    ],
+    featured: false,
+    links: [{ label: "Source", href: github("kinga-pest-care"), kind: "code" }],
     caseStudy: {
       overview:
         "Kinga Pest Care is a marketing site for a professional fumigation and pest-management business. It pairs an editorial 'Living Shield' art direction with an inspection-request flow that actually reaches a server.",
@@ -245,12 +258,30 @@ const newProjects: Project[] = [
     description:
       "A hospital information system and electronic medical record platform for Kenya, structured as a monorepo with a staff console, patient portal, API and shared clinical packages.",
     category: "systems",
-    stack: ["Next.js 16", "React 19", "NestJS", "PostgreSQL", "Drizzle", "TypeScript"],
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "NestJS",
+      "PostgreSQL",
+      "Drizzle",
+      "TypeScript",
+    ],
     year: 2026,
     status: "In development",
     role: "Architecture and full-stack engineering",
-    featured: true,
-    links: [],
+    featured: false,
+    links: [
+      {
+        label: "Patient portal",
+        href: "https://uhaibora-patient-portal.vercel.app",
+        kind: "live",
+      },
+      {
+        label: "Staff console",
+        href: "https://uhaibora-web.vercel.app/app",
+        kind: "live",
+      },
+    ],
     caseStudy: {
       overview:
         "UhaiBora is a patient-centric hospital information system and electronic medical record platform for Kenya. It is structured as a digital hospital operating platform rather than a marketing site or a generic admin panel.",
@@ -288,12 +319,21 @@ const newProjects: Project[] = [
     description:
       "A logistics and booking platform for Kenya covering parcel, goods and materials movements, with server-calculated pricing, role-specific surfaces and a recorded status history.",
     category: "systems",
-    stack: ["Next.js 16", "PostgreSQL", "Zod", "M-PESA", "TypeScript", "Vitest"],
+    stack: [
+      "Next.js 16",
+      "PostgreSQL",
+      "Zod",
+      "M-PESA",
+      "TypeScript",
+      "Vitest",
+    ],
     year: 2026,
     status: "In development",
     role: "Product architecture and full-stack engineering",
     featured: true,
-    links: [],
+    links: [
+      { label: "Live site", href: "https://letava.vercel.app", kind: "live" },
+    ],
     caseStudy: {
       overview:
         "LETAVA is a logistics and booking platform for Kenya. It quotes, books, dispatches and tracks parcel, goods and materials movements, with pricing calculated on the server and every status change recorded against a reference.",
@@ -336,7 +376,9 @@ const newProjects: Project[] = [
     status: "In development",
     role: "Product design and full-stack engineering",
     featured: true,
-    links: [],
+    links: [
+      { label: "Live site", href: "https://songaops.vercel.app", kind: "live" },
+    ],
     caseStudy: {
       overview:
         "SongaOps gives a matatu SACCO a single operational picture: which vehicles are ready to dispatch, how the stage queue is moving, what each shift collected and spent, and what each vehicle owner is owed.",
@@ -372,7 +414,13 @@ const newProjects: Project[] = [
     description:
       "A Kenya-first construction marketplace and procurement platform. The browsing half is built against a real PostgreSQL catalogue; the transacting half is deliberately labelled as not built.",
     category: "systems",
-    stack: ["Next.js 16", "Drizzle ORM", "PostgreSQL", "Tailwind CSS v4", "TypeScript"],
+    stack: [
+      "Next.js 16",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Tailwind CSS v4",
+      "TypeScript",
+    ],
     year: 2026,
     status: "Prototype",
     role: "Product architecture and full-stack engineering",
@@ -404,6 +452,172 @@ const newProjects: Project[] = [
         "A working marketplace browsing experience against a real catalogue. Selling, ordering and paying are not built, and the interface says so.",
       reflection:
         "The most important design decision was to label the missing half clearly. A marketplace that overstates its readiness is not trustworthy.",
+    },
+  },
+  {
+    slug: "jengapact",
+    title: "JengaPact",
+    tagline: "Build without the uncertainty.",
+    description:
+      "A Kenya-first construction agreement and transparency platform. It turns the agreement, variations, valuations, certificates and payments into one attributable record across every project stage.",
+    category: "systems",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "better-auth",
+      "Zod",
+    ],
+    year: 2026,
+    status: "Application",
+    role: "Product design and full-stack engineering",
+    featured: true,
+    links: [
+      {
+        label: "Live site",
+        href: "https://jengapact.vercel.app",
+        kind: "live",
+      },
+      { label: "Source", href: github("jengapact"), kind: "code" },
+    ],
+    caseStudy: {
+      overview:
+        "JengaPact is a construction transparency platform for Kenya. It keeps the agreement, variations, valuations, certificates and payments in one attributable record, so a project does not depend on who remembers what was said.",
+      context:
+        "Construction projects accumulate decisions across clients, contractors, consultants and suppliers. When variations and payments live in separate documents and conversations, the record becomes disputed. The product needed one spine from negotiation to final payment.",
+      approach:
+        "I designed the system around eight project stages and four money records, with an append-only ledger and integer money handling. Every decision is attributed to a person and a point in time. The public site explains the trust model; the authenticated application carries the operational detail.",
+      built: [
+        "A project record spanning eight stages from negotiation to final payment",
+        "Variation, valuation, certificate and payment records",
+        "An append-only ledger with attributable decisions",
+        "Role-aware authentication and protected application routes",
+        "A public explanation of the trust and transparency model",
+        "PostgreSQL persistence and server-validated inputs",
+      ],
+      technical: [
+        "Next.js 16 App Router and React 19",
+        "Strict TypeScript and Tailwind CSS v4",
+        "Drizzle ORM with PostgreSQL",
+        "better-auth for authentication and sessions",
+        "Zod validation at the server boundary",
+        "Vitest and Playwright test coverage",
+      ],
+      outcome:
+        "A live application build at jengapact.vercel.app with authentication and database-backed records. It is presented as a working product, not as a claim about completed commercial projects.",
+      reflection:
+        "Trust in construction software is a data-model decision before it is a visual one. If a record cannot be attributed, the interface cannot make it trustworthy.",
+    },
+  },
+  {
+    slug: "bora-hardware",
+    title: "Bora Hardware",
+    tagline: "Genuine gear. Honest prices.",
+    description:
+      "A catalogue-first storefront for a Nairobi hardware counter. Power tools, hand tools, electrical, plumbing and building materials are priced per unit, with search, department browsing and a WhatsApp order handoff.",
+    category: "client",
+    stack: ["Next.js 16", "React 19", "Tailwind CSS v4", "Motion", "Lucide"],
+    year: 2026,
+    status: "Catalogue build",
+    role: "Design and frontend engineering",
+    featured: true,
+    links: [
+      {
+        label: "Live site",
+        href: "https://bora-hardware.vercel.app",
+        kind: "live",
+      },
+      { label: "Source", href: github("bora-hardware"), kind: "code" },
+    ],
+    caseStudy: {
+      overview:
+        "Bora Hardware is a catalogue-first storefront for a Nairobi hardware counter. It covers power tools, hand tools, electrical, plumbing, building materials, safety and workwear, with the unit price shown on every line.",
+      context:
+        "Hardware cannot be compared on ticket price alone. A bag of cement, a metre of cable and a box of screws are bought in different units, and a customer needs to see the unit price before deciding. The site had to make that comparison legible on a phone.",
+      approach:
+        "I started from the catalogue rather than the homepage. Departments, search and product detail share one product model with unit pricing, specifications and stock context. Checkout is an order summary that hands off to WhatsApp, which matches how the counter already works.",
+      built: [
+        "A home page with featured lines, departments and delivery context",
+        "A full catalogue with a department rail and sort controls",
+        "Department, search and product-detail routes",
+        "Unit pricing on every line, with specification tables",
+        "A sticky mobile buy bar on product pages",
+        "An order summary that hands off to WhatsApp",
+        "Contact, delivery and payment guidance",
+      ],
+      technical: [
+        "Next.js 16 App Router and React 19",
+        "Tailwind CSS v4 with a token-led retail system",
+        "Motion and Lucide for restrained interaction and iconography",
+        "Static generation for every catalogue route except search",
+        "Product and HardwareStore JSON-LD, sitemap and robots",
+        "Puppeteer and Sharp for social and product imagery",
+      ],
+      outcome:
+        "A live catalogue storefront at bora-hardware.vercel.app. The catalogue uses sample stock and pricing; ordering hands off to WhatsApp and no online payment is claimed.",
+      reflection:
+        "The unit price is the trust primitive in hardware retail. Once that is clear, the rest of the storefront has something honest to organise around.",
+    },
+  },
+  {
+    slug: "mashinika",
+    title: "Mashinika",
+    tagline: "Press once. Help is minutes away.",
+    description:
+      "Kenya's roadside assistance and vehicle care platform. Request a rescue, get dispatched to a vetted technician and follow the job through a live service dashboard.",
+    category: "systems",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "Tailwind CSS v4",
+      "Supabase",
+      "Drizzle ORM",
+      "Mapbox GL",
+      "Zustand",
+      "TanStack Query",
+    ],
+    year: 2026,
+    status: "Application",
+    role: "Product design and full-stack engineering",
+    featured: true,
+    links: [
+      {
+        label: "Live site",
+        href: "https://mashinika.vercel.app",
+        kind: "live",
+      },
+      { label: "Source", href: github("mashinika"), kind: "code" },
+    ],
+    caseStudy: {
+      overview:
+        "Mashinika is a roadside assistance and vehicle care platform for Kenyan motorists. It connects a rescue request to a vetted technician and carries the job through dispatch, service and completion in one dashboard.",
+      context:
+        "A breakdown is a high-stress moment. The motorist needs to know who is coming, when they will arrive and what the job will cost. The operator needs enough context to dispatch the right technician without asking the same questions twice.",
+      approach:
+        "I built the product around a service-first public site and an authenticated dashboard. Rescue, care, inspection, fleet and academy surfaces share one account and notification model. Map and job state are treated as operational data, not decoration.",
+      built: [
+        "A public service site covering rescue, care, inspection, buy, trade, fleet and academy",
+        "A rescue request flow with technician dispatch",
+        "An authenticated dashboard with job and notification surfaces",
+        "Vehicle care, inspection and fleet service routes",
+        "Map-based location context for dispatch",
+        "Role-aware navigation and account surfaces",
+      ],
+      technical: [
+        "Next.js 16 App Router and React 19",
+        "Tailwind CSS v4 with base-ui and shadcn-style components",
+        "Zustand for client state and TanStack Query for server state",
+        "Drizzle ORM and Supabase for persistence and authentication",
+        "Mapbox GL for location context",
+        "Zod contracts and Vitest/Playwright coverage",
+      ],
+      outcome:
+        "A live application build at mashinika.vercel.app with authentication, dashboard surfaces and a rescue request flow. Production dispatch, payments and live fleet integrations still require configuration and operational review.",
+      reflection:
+        "In a rescue product, trust is a function of state clarity. The interface has to say what is happening, who is responsible and what happens next.",
     },
   },
 ];
@@ -438,10 +652,9 @@ const slugify = (value: string) =>
 
 const legacyCaseStudy = (project: LegacyProject): CaseStudy => ({
   overview: project.description,
-  context:
-    project.isPrivate
-      ? "This is a private build. The public case study describes the problem and the approach without exposing client material or credentials."
-      : "The project is part of a body of work exploring practical product interfaces, brand sites and full-stack applications.",
+  context: project.isPrivate
+    ? "This is a private build. The public case study describes the problem and the approach without exposing client material or credentials."
+    : "The project is part of a body of work exploring practical product interfaces, brand sites and full-stack applications.",
   approach:
     "The work was shaped around a clear primary action, a restrained visual system and an interface that stays usable on a phone. Content and presentation were kept separate so the site can evolve without a rewrite.",
   built: [
@@ -464,86 +677,90 @@ const legacyCaseStudy = (project: LegacyProject): CaseStudy => ({
     "The recurring lesson is that clarity is a technical decision as much as a visual one: fewer states, better names and an honest account of what the product does.",
 });
 
-const legacyProjects: Project[] = (
-  legacyData.projects as LegacyProject[]
-).map((project) => ({
-  slug: slugify(project.name),
-  title: project.title,
-  tagline: project.technologies.slice(0, 3).join(" · "),
-  description: project.description,
-  category: legacyCategoryMap[project.category] ?? "experiments",
-  stack: project.technologies,
-  year: project.year,
-  status: project.live
-    ? "Live"
-    : project.isPrivate
-      ? "Private"
-      : "Source",
-  role: "Design and development",
-  featured: false,
-  links: [
-    ...(project.live
-      ? [{ label: "Live site", href: project.live, kind: "live" as const }]
-      : []),
-    ...(!project.isPrivate && project.code
-      ? [{ label: "Source", href: project.code, kind: "code" as const }]
-      : []),
-  ],
-  caseStudy: legacyCaseStudy(project),
-}));
+const legacyProjects: Project[] = (legacyData.projects as LegacyProject[]).map(
+  (project) => ({
+    slug: slugify(project.name),
+    title: project.title,
+    tagline: project.technologies.slice(0, 3).join(" · "),
+    description: project.description,
+    category: legacyCategoryMap[project.category] ?? "experiments",
+    stack: project.technologies,
+    year: project.year,
+    status: project.live ? "Live" : project.isPrivate ? "Private" : "Source",
+    role: "Design and development",
+    featured: false,
+    links: [
+      ...(project.live
+        ? [{ label: "Live site", href: project.live, kind: "live" as const }]
+        : []),
+      ...(!project.isPrivate && project.code
+        ? [{ label: "Source", href: project.code, kind: "code" as const }]
+        : []),
+    ],
+    caseStudy: legacyCaseStudy(project),
+  }),
+);
 
-const legacyOrder = [
+const curatedOrder = [
+  "githara-works",
+  "kabera-kin",
+  "tradebridge",
+  "jengapact",
+  "mashinika",
+  "bora-hardware",
+  "songaops",
+  "letava",
+  "uhaibora",
   "dishcision",
   "invoice-saas",
   "mindshift",
-  "carecovery",
-  "bugdet-app",
   "one4all",
-  "g-thorough-cars-ltd",
-  "bo-installationen",
-  "pik-bau",
   "rudolf-gmbh",
-  "lc-fassadenbau-og",
-  "facade-studio",
-  "dv-premium-cleaning",
-  "trademark-aroma",
+  "pik-bau",
   "gashi-installationen",
-  "bo-installationen-white-version",
+  "lc-fassadenbau-og",
   "lc-fassadenbau-og-facade-construction",
-  "g-thorough-cars",
-  "fastfood-app",
-  "g-thoroughliquors",
+  "facade-studio",
+  "bo-installationen",
+  "bo-installationen-white-version",
+  "dv-premium-cleaning",
   "vintagechauffeur",
-  "jeudy",
-  "valentino",
-  "valentines",
+  "kinga-pest-care",
+  "sokobuild",
+  "g-thorough-cars-ltd",
+  "g-thorough-cars",
+  "g-thoroughliquors",
+  "trademark-aroma",
+  "fastfood-app",
+  "carrecovery",
+  "carrecovery-backend",
   "budgetplanner",
   "tasks",
   "pcea-calendar",
   "studify-web-app",
-  "carrecovery-backend",
   "firebase-authentication",
-  "jeffkaberagithara-guru",
-  "semantic-html-for-seo-and-accessibility",
-  "html-forms-implementation",
-  "school-timetable-implementation",
-  "programme101",
   "forms-html",
+  "bugdet-app",
+  "jeudy",
+  "valentino",
+  "valentines",
   "team-project-demo",
+  "programme101",
   "next-test",
   "external-library",
   "capera",
+  "semantic-html-for-seo-and-accessibility",
+  "html-forms-implementation",
+  "school-timetable-implementation",
+  "jeffkaberagithara-guru",
   "jeffkaberagitharaportfolio",
 ];
 
-const allLegacy = [...legacyProjects].sort((a, b) => {
-  const aIndex = legacyOrder.indexOf(a.slug);
-  const bIndex = legacyOrder.indexOf(b.slug);
-  if (aIndex === -1 && bIndex === -1) return b.year - a.year;
-  if (aIndex === -1) return 1;
-  if (bIndex === -1) return -1;
-  return aIndex - bIndex;
-});
+const curatedRank = new Map(
+  curatedOrder.map((slug, index) => [slug, index] as const),
+);
+
+const allLegacy = [...legacyProjects];
 
 const legacyPortfolio = allLegacy.find(
   (project) => project.slug === "jeffkaberagitharaportfolio",
@@ -551,40 +768,31 @@ const legacyPortfolio = allLegacy.find(
 if (legacyPortfolio) {
   legacyPortfolio.status = "Archive";
   legacyPortfolio.title = "Portfolio Website — 2026 Edition";
-  legacyPortfolio.tagline = "The previous portfolio, superseded by this edition.";
+  legacyPortfolio.tagline =
+    "The previous portfolio, superseded by this edition.";
   legacyPortfolio.description =
     "The previous React and Vite portfolio for Jeff Kabera Githara. It remains available as a record of the earlier design direction; this site is the current edition.";
   legacyPortfolio.featured = false;
 }
 
 const seen = new Set<string>();
-export const allProjects: Project[] = [...newProjects, ...allLegacy].filter(
-  (project) => {
+export const allProjects: Project[] = [...newProjects, ...allLegacy]
+  .filter((project) => {
     if (seen.has(project.slug)) return false;
     seen.add(project.slug);
     return true;
-  },
-);
+  })
+  .sort((a, b) => {
+    const rankA = curatedRank.get(a.slug) ?? Number.MAX_SAFE_INTEGER;
+    const rankB = curatedRank.get(b.slug) ?? Number.MAX_SAFE_INTEGER;
+    return rankA - rankB;
+  });
 
 export const featuredProjects = allProjects.filter(
   (project) => project.featured,
 );
 
-const legacyFeaturedSlugs = [
-  "dishcision",
-  "invoice-saas",
-  "mindshift",
-  "carecovery",
-  "bugdet-app",
-  "one4all",
-];
-
-export const homeProjects = [
-  ...featuredProjects.slice(0, 4),
-  ...legacyFeaturedSlugs
-    .map((slug) => allProjects.find((project) => project.slug === slug))
-    .filter((project): project is Project => Boolean(project)),
-].slice(0, 4);
+export const homeProjects = featuredProjects.slice(0, 4);
 
 export const workFeaturedProjects = featuredProjects;
 
