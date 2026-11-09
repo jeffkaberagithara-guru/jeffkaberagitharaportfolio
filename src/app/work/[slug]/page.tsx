@@ -95,7 +95,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <div className="case-hero__links">
                 {project.links.map((link) => (
                   <a
-                    className="arrow-link"
+                    className={
+                      link.kind === "live"
+                        ? "arrow-link arrow-link--live"
+                        : "arrow-link"
+                    }
                     href={link.href}
                     key={`${link.label}-${link.href}`}
                     rel="noreferrer"
@@ -186,6 +190,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <div className="case-aside__stack">
                 {project.links.map((link) => (
                   <a
+                    data-kind={link.kind}
                     href={link.href}
                     key={`${link.label}-${link.href}-aside`}
                     rel="noreferrer"
