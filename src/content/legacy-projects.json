@@ -27,12 +27,7 @@
       "title": "One4All Kälte & Klimatechnik",
       "description": "A professional German-language corporate website for a Vienna-based refrigeration and air-conditioning company — precision engineering (Kälte · Klima · Präzision) presented with a refined, trustworthy identity.",
       "category": "client",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://one4all-cyan.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/one4all",
@@ -59,11 +54,7 @@
       "name": "g-thorough-cars",
       "title": "G-Thorough Cars",
       "description": "An earlier iteration of the G-Thorough Cars rental brand — a refined landing experience showcasing the fleet and core services.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/g-thorough-cars",
@@ -74,12 +65,7 @@
       "name": "bo-installationen",
       "title": "B.O Installationen",
       "description": "A polished corporate website for B.O Installationen, a Vienna sanitary- and heating company — 'Präzision in jedem Detail' — with full services presentation.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://bo-installationen.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/bo-installationen",
@@ -90,12 +76,7 @@
       "name": "bo-installationen-white-version",
       "title": "B.O Installationen — White Variant",
       "description": "A light-themed corporate variant of the B.O Installationen brand, keeping the same Viennese sanitary- and heating expertise in an airy, modern aesthetic.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://bo-installationen-white-version.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/bo-installationen-white-version",
@@ -106,12 +87,7 @@
       "name": "gashi-installationen",
       "title": "Gashi Installations GmbH",
       "description": "A professional, localised website for Gashi Installations GmbH — installation experts in 1120 Vienna (Meidling) — turning technical services into an approachable client experience.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "shadcn/ui"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
       "year": 2026,
       "live": "https://gashi-installationen.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/gashi-installationen",
@@ -122,11 +98,7 @@
       "name": "pik-bau",
       "title": "PIK BAU — Architecture & Construction",
       "description": "An elegant brand website for PIK Bau, presenting architectural and construction services with a strong visual identity and project showcase.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://pik-bau.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/pik-bau",
@@ -137,12 +109,7 @@
       "name": "rudolf-gmbh",
       "title": "RUDOLF GmbH",
       "description": "A modern corporate site for RUDOLF GmbH, a Viennese installation company specialising in gas, water, heating and sanitation engineering.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://rudolf-gmbh.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/rudolf-gmbh",
@@ -169,11 +136,7 @@
       "name": "LC-FassadenBau-OG-facade-construction",
       "title": "LC FassadenBau — Construction",
       "description": "A construction-focused companion site for LC FassadenBau OG, detailing facade-construction methods, materials and completed works.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://lc-fassaden-bau-og-facade-construct.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/LC-FassadenBau-OG-facade-construction",
@@ -184,11 +147,7 @@
       "name": "facade-studio",
       "title": "Vertex Facades — Building Envelope",
       "description": "A professional website for a facade-engineering studio (Vertex Facades), communicating expertise in engineering the modern building envelope.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS"],
       "year": 2026,
       "live": "https://vertex-facade-studio.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/facade-studio",
@@ -199,11 +158,7 @@
       "name": "dv-premium-cleaning",
       "title": "DV Premium Clean",
       "description": "A service platform for DV Premium Clean — building cleaning, laundry and tailoring in Vienna — combining premium brand identity with clear service showcases.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://dv-premium-cleaning.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/dv-premium-cleaning",
@@ -214,12 +169,7 @@
       "name": "tradeMark-aroma",
       "title": "TradeMark Aroma — Luxury Fragrances",
       "description": "An elegant, e-commerce-style website for TradeMark Aroma, a Nairobi-based brand offering luxury fragrances and scented candles.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/tradeMark-aroma",
@@ -230,10 +180,7 @@
       "name": "fastfood-app",
       "title": "Fast-Food Takeaway",
       "description": "A vibrant website for a fast-food takeaway restaurant — appetising menu presentation with an ordering-oriented, conversion-focused design.",
-      "technologies": [
-        "React",
-        "Tailwind CSS"
-      ],
+      "technologies": ["React", "Tailwind CSS"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/fastfood-app",
@@ -244,14 +191,9 @@
       "name": "g-thoroughLiquors",
       "title": "G-Thorough Liquors",
       "description": "A database-driven brand site for a premium liquor line, integrating Supabase to power products, categories and inventory.",
-      "technologies": [
-        "React",
-        "Supabase",
-        "Tailwind CSS",
-        "PostgreSQL"
-      ],
+      "technologies": ["React", "Supabase", "Tailwind CSS", "PostgreSQL"],
       "year": 2026,
-      "live": null,
+      "live": "https://liquor-store-six.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/g-thoroughLiquors",
       "isPrivate": true,
       "featured": false
@@ -260,14 +202,9 @@
       "name": "vintagechauffeur",
       "title": "Vintage Chauffeur",
       "description": "An elegant, v0-assembled booking-style landing site for a vintage chauffeur service, pairing classic vehicles with a refined digital presence.",
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "shadcn/ui"
-      ],
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
       "year": 2026,
-      "live": null,
+      "live": "https://vintagechauffeur.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/vintagechauffeur",
       "isPrivate": true,
       "featured": false
@@ -276,12 +213,7 @@
       "name": "jeudy",
       "title": "Judy · Jeff — A Cinematic Story",
       "description": "A cinematic, typography-driven storytelling site crafted for a truly special occasion — blending animation and emotion into an unforgettable keepsake.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/jeudy",
@@ -292,10 +224,7 @@
       "name": "valentino",
       "title": "Valentino — For Tina",
       "description": "A heartfelt, animated single-page experience crafted as a personal Valentine's gesture — full of playful micro-interactions and thoughtful motion design.",
-      "technologies": [
-        "React",
-        "JavaScript"
-      ],
+      "technologies": ["React", "JavaScript"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/valentino",
@@ -306,10 +235,7 @@
       "name": "valentines",
       "title": "Valentines",
       "description": "A playful Valentine's-themed experience built with React — a short, animated demonstration of creative front-end craft.",
-      "technologies": [
-        "React",
-        "Tailwind CSS"
-      ],
+      "technologies": ["React", "Tailwind CSS"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/valentines",
@@ -353,11 +279,7 @@
       "name": "mindshift",
       "title": "MindShift — Mental Wellbeing",
       "description": "A calming digital space dedicated to mental wellbeing — guiding users through mindful practices, reflections and daily resets in a serene, distraction-free interface.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "year": 2026,
       "live": "https://mindshift-neon.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/mindshift",
@@ -367,15 +289,10 @@
     {
       "name": "jeffkaberagitharaportfolio",
       "title": "Portfolio Website",
-      "description": "This site — a high-performance, fully responsive personal portfolio built with React 19, Tailwind CSS v4 and Framer Motion, featuring code-split sections, SEO and accessibility.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Vite"
-      ],
+      "description": "The previous portfolio — a high-performance, fully responsive personal site built with React 19, Tailwind CSS v4 and Framer Motion, featuring code-split sections, SEO and accessibility.",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
       "year": 2026,
-      "live": "https://jeffkaberagitharaportfolio.onrender.com",
+      "live": "https://kabera-portfolio.onrender.com",
       "code": "https://github.com/jeffkaberagithara-guru/jeffkaberagitharaportfolio",
       "isPrivate": false,
       "featured": true
@@ -384,14 +301,9 @@
       "name": "budgetPlanner",
       "title": "BudgetBold — Web Budget Planner",
       "description": "An interactive budget-planning web app for tracking income, expenses and savings goals, wrapped in a clean, modern interface.",
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
       "year": 2026,
-      "live": null,
+      "live": "https://budgetplanner.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/budgetPlanner",
       "isPrivate": false,
       "featured": false
@@ -400,11 +312,7 @@
       "name": "Tasks",
       "title": "Tasks — Productivity App",
       "description": "A lightweight task-management web app for tracking to-dos and staying organised, focused on speed and simplicity.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Vite"],
       "year": 2025,
       "live": "https://tasks-ashy-gamma.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/Tasks",
@@ -415,10 +323,7 @@
       "name": "pcea-calendar",
       "title": "PCMF Calendar",
       "description": "An interactive event-calendar application (PCMF) for planning schedules and occasions, built with React and Tailwind CSS.",
-      "technologies": [
-        "React",
-        "Tailwind CSS"
-      ],
+      "technologies": ["React", "Tailwind CSS"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/pcea-calendar",
@@ -429,11 +334,7 @@
       "name": "studify-web-app",
       "title": "Studify",
       "description": "A study-focused web app designed to help students organise learning routines and stay on top of their goals.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Vite"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/studify-web-app",
@@ -461,12 +362,7 @@
       "name": "carRecovery_Backend",
       "title": "ResQAuto — API Backend",
       "description": "The dedicated Express + MongoDB API powering ResQAuto — service-provider management, emergency dispatch logic and towing/vehicle-recovery workflows.",
-      "technologies": [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose"
-      ],
+      "technologies": ["Node.js", "Express", "MongoDB", "Mongoose"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/carRecovery_Backend",
@@ -477,14 +373,9 @@
       "name": "Firebase-Authentication",
       "title": "Firebase Authentication",
       "description": "A complete authentication demo integrating Firebase Auth into a React app — sign-up, sign-in, session handling and protected routes.",
-      "technologies": [
-        "React",
-        "Firebase",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "Firebase", "Tailwind CSS", "Vite"],
       "year": 2025,
-      "live": null,
+      "live": "https://firebase-authentication.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/Firebase-Authentication",
       "isPrivate": true,
       "featured": false
@@ -493,12 +384,7 @@
       "name": "bugdet-app",
       "title": "BudgetBold — Mobile Budget Tracker",
       "description": "A local-first budget tracker for iOS & Android built with Expo — income, expense, savings and transfer transactions, monthly budget limits and over-budget indicators.",
-      "technologies": [
-        "Expo",
-        "React Native",
-        "TypeScript",
-        "React Compiler"
-      ],
+      "technologies": ["Expo", "React Native", "TypeScript", "React Compiler"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/bugdet-app",
@@ -509,10 +395,7 @@
       "name": "jeffkaberagithara-guru",
       "title": "GitHub Profile & Developer Bio",
       "description": "The repository behind my GitHub landing page — a Developer README introducing my work as a full-stack developer and creative technologist.",
-      "technologies": [
-        "Markdown",
-        "GitHub"
-      ],
+      "technologies": ["Markdown", "GitHub"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/jeffkaberagithara-guru",
@@ -523,11 +406,7 @@
       "name": "Semantic-HTML-for-SEO-and-Accessibility",
       "title": "Semantic HTML for SEO & Accessibility",
       "description": "A practical guide with paired examples — semantic vs non-semantic markup and accessibility before/after — demonstrating best-practice HTML for search engines and screen readers.",
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "Accessibility"
-      ],
+      "technologies": ["HTML5", "CSS3", "Accessibility"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/Semantic-HTML-for-SEO-and-Accessibility",
@@ -538,10 +417,7 @@
       "name": "HTML-Forms-Implementation",
       "title": "Semantic HTML Forms",
       "description": "A collection of structured HTML forms demonstrating semantic and accessible form patterns — registration, feedback and survey-style forms done right.",
-      "technologies": [
-        "HTML5",
-        "CSS3"
-      ],
+      "technologies": ["HTML5", "CSS3"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/HTML-Forms-Implementation",
@@ -552,10 +428,7 @@
       "name": "School-Timetable-Implementation",
       "title": "School Timetable",
       "description": "A clean, readable weekly-schedule implementation built with semantic markup — a focused exercise in structured HTML and CSS layout.",
-      "technologies": [
-        "HTML5",
-        "CSS3"
-      ],
+      "technologies": ["HTML5", "CSS3"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/School-Timetable-Implementation",
@@ -566,10 +439,7 @@
       "name": "programme101",
       "title": "Programming 101 — Fundamentals",
       "description": "A fundamentals playground covering box models, buttons, forms, grids and semantic HTML — the essential building blocks of the web.",
-      "technologies": [
-        "HTML5",
-        "CSS3"
-      ],
+      "technologies": ["HTML5", "CSS3"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/programme101",
@@ -580,11 +450,9 @@
       "name": "forms.html",
       "title": "User Forms",
       "description": "Hand-crafted user forms written in pure HTML, focused on clean structure, usability and accessible inputs.",
-      "technologies": [
-        "HTML5"
-      ],
+      "technologies": ["HTML5"],
       "year": 2025,
-      "live": null,
+      "live": "https://forms-html.vercel.app",
       "code": "https://github.com/jeffkaberagithara-guru/forms.html",
       "isPrivate": false,
       "featured": false
@@ -593,10 +461,7 @@
       "name": "team-project-demo",
       "title": "Team Project — Demo Site",
       "description": "A multi-page team-project demo site (About, Services) built with semantic HTML and CSS — a foundation practice in content structure and styling.",
-      "technologies": [
-        "HTML5",
-        "CSS3"
-      ],
+      "technologies": ["HTML5", "CSS3"],
       "year": 2026,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/team-project-demo",
@@ -607,11 +472,7 @@
       "name": "Next_Test",
       "title": "Next.js Experiments",
       "description": "A Next.js App Router playground explored while mastering the framework — routing, rendering and layout experiments in an ever-evolving surface.",
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS"
-      ],
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/Next_Test",
@@ -622,11 +483,7 @@
       "name": "External-library",
       "title": "External Library — Brand Site",
       "description": "A React & Vite brand site demonstrating modern integration and styling of external libraries in a polished single-page layout.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Vite"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/External-library",
@@ -637,11 +494,7 @@
       "name": "capEra",
       "title": "Cap Era — Interactive Experiment",
       "description": "An experimental React app exploring interactive UI patterns and modern front-end tooling.",
-      "technologies": [
-        "React",
-        "Tailwind CSS",
-        "Vite"
-      ],
+      "technologies": ["React", "Tailwind CSS", "Vite"],
       "year": 2025,
       "live": null,
       "code": "https://github.com/jeffkaberagithara-guru/capEra",
