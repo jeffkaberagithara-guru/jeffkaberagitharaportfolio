@@ -79,6 +79,7 @@ export const milestones: Milestone[] = [
       "rudolf-gmbh",
       "kinga-pest-care",
       "g-thorough-cars-ltd",
+      "bora-hardware",
     ],
     discipline: "Client work",
   },
@@ -88,7 +89,7 @@ export const milestones: Milestone[] = [
     period: "Late 2026",
     title: "Systems with consequences",
     summary:
-      "Moved into domains where the software carries real operational weight: clinical records, logistics, matatu finance, construction procurement, architectural practice and import compliance. The interfaces became quieter; the data models became the work.",
+      "Moved into domains where the software carries real operational weight: clinical records, logistics, matatu finance, construction agreements, architectural practice, import compliance and roadside assistance. The interfaces became quieter; the data models became the work.",
     points: [
       "Role-based access, audit trails and server-authoritative permissions",
       "PostgreSQL, Drizzle, Supabase and NestJS",
@@ -102,7 +103,8 @@ export const milestones: Milestone[] = [
       "tradebridge",
       "githara-works",
       "kabera-kin",
-      "bora-hardware",
+      "jengapact",
+      "mashinika",
     ],
     discipline: "Systems",
   },
