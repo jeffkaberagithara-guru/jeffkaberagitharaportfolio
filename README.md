@@ -2,12 +2,12 @@
 
 An editorial portfolio for **Jeff Kabera Githara**, a web developer and software engineer in Nairobi. Built with the **Next.js App Router**, **TypeScript**, **Tailwind CSS v4**, **Motion**, **Lucide** and **Zod**.
 
-Live: [jeffkaberagitharaportfolio.onrender.com](https://jeffkaberagitharaportfolio.onrender.com)
+Live: [jeffkaberagitharaportfolio.vercel.app](https://jeffkaberagitharaportfolio.vercel.app)
 
 ## What is here
 
 - **Home** — editorial hero, selected work, practice, principles, journey and contact.
-- **Work** — searchable and filterable index of 49 project records across five disciplines.
+- **Work** — searchable and filterable index of 52 project records across five disciplines.
 - **Case studies** — static routes generated from typed content, with honest build states.
 - **About / Journey / CV / Colophon** — practice, project record, printable profile and design notes.
 - **Contact** — validated server endpoint using Resend when configured, with a clearly labelled mailto fallback when it is not.
@@ -36,7 +36,7 @@ npm run start
 Copy `.env.example` to `.env.local`.
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://jeffkaberagitharaportfolio.onrender.com
+NEXT_PUBLIC_SITE_URL=https://jeffkaberagitharaportfolio.vercel.app
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=jeffkaberagithara@gmail.com
 CONTACT_FROM_EMAIL=portfolio@your-verified-domain.com
@@ -56,7 +56,7 @@ public/          # portraits, CV, icons and social image
 
 ## Deployment
 
-`render.yaml` defines a Node web service (`npm ci && npm run build`, then `npm run start`). Set the contact environment variables in Render to enable email delivery.
+The current site is deployed on Vercel at [jeffkaberagitharaportfolio.vercel.app](https://jeffkaberagitharaportfolio.vercel.app). `render.yaml` remains available as an alternative Node web service (`npm ci && npm run build`, then `npm run start`). Set the contact environment variables in the hosting provider to enable email delivery.
 
 ## Contact
 
