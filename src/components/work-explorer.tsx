@@ -15,10 +15,22 @@ type WorkExplorerProps = {
 export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
+  const [liveOnly, setLiveOnly] = useState(false);
+
+  const liveCount = useMemo(
+    () =>
+      projects.filter((project) =>
+        project.links.some((link) => link.kind === "live"),
+      ).length,
+    [projects],
+  );
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return projects.filter((project) => {
+      if (liveOnly && !project.links.some((link) => link.kind === "live")) {
+        return false;
+      }
       const matchesCategory = filter === "all" || project.category === filter;
       if (!matchesCategory) return false;
       if (!needle) return true;
@@ -32,19 +44,29 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
         .toLowerCase()
         .includes(needle);
     });
-  }, [filter, projects, query]);
+  }, [filter, liveOnly, projects, query]);
 
   const filters: { key: Filter; label: string; count: number }[] = [
     { key: "all", label: "Everything", count: projects.length },
     ...categories,
   ];
 
-  const hasFilters = filter !== "all" || query.trim().length > 0;
+  const hasFilters = filter !== "all" || liveOnly || query.trim().length > 0;
+
+  const reset = () => {
+    setFilter("all");
+    setQuery("");
+    setLiveOnly(false);
+  };
 
   return (
     <div className="work-explorer">
       <div className="work-explorer__controls">
-        <div aria-label="Filter by discipline" className="work-explorer__filters" role="group">
+        <div
+          aria-label="Filter by discipline"
+          className="work-explorer__filters"
+          role="group"
+        >
           {filters.map((item) => (
             <button
               aria-pressed={filter === item.key}
@@ -57,6 +79,16 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
               <span className="filter-chip__count mono">{item.count}</span>
             </button>
           ))}
+          <button
+            aria-pressed={liveOnly}
+            className="filter-chip filter-chip--live"
+            onClick={() => setLiveOnly((value) => !value)}
+            type="button"
+          >
+            <span aria-hidden="true" className="filter-chip__dot" />
+            <span>Live</span>
+            <span className="filter-chip__count mono">{liveCount}</span>
+          </button>
         </div>
 
         <label className="work-explorer__search">
@@ -85,9 +117,11 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
           {filtered.length} {filtered.length === 1 ? "project" : "projects"}
         </span>
         <span>
-          {filter === "all"
-            ? "Complete index"
-            : filters.find((item) => item.key === filter)?.label}
+          {liveOnly
+            ? "Live now"
+            : filter === "all"
+              ? "Complete index"
+              : filters.find((item) => item.key === filter)?.label}
           {query ? ` / “${query}”` : ""}
         </span>
       </div>
@@ -106,15 +140,10 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
       ) : (
         <div className="work-explorer__empty">
           <p className="display">No work matches that combination.</p>
-          <p>
-            Try a broader term, or return to the complete index.
-          </p>
+          <p>Try a broader term, or return to the complete index.</p>
           <button
             className="button button--outline"
-            onClick={() => {
-              setFilter("all");
-              setQuery("");
-            }}
+            onClick={reset}
             type="button"
           >
             Reset filters
@@ -125,10 +154,7 @@ export function WorkExplorer({ projects, categories }: WorkExplorerProps) {
       {hasFilters && filtered.length > 0 ? (
         <button
           className="work-explorer__reset mono"
-          onClick={() => {
-            setFilter("all");
-            setQuery("");
-          }}
+          onClick={reset}
           type="button"
         >
           <X aria-hidden="true" size={13} strokeWidth={1.5} /> Reset view
