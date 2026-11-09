@@ -133,6 +133,8 @@ export function ProjectCover({
   size = "card",
   className,
 }: ProjectCoverProps) {
+  const isLive = project.links.some((link) => link.kind === "live");
+
   return (
     <div
       className={["project-cover", `project-cover--${size}`, className]
@@ -152,7 +154,12 @@ export function ProjectCover({
       <Motif category={project.category} />
       <div className="project-cover__footer">
         <span className="project-cover__title">{project.title}</span>
-        <span className="mono project-cover__status">{project.status}</span>
+        <span className="mono project-cover__status">
+          {isLive && project.status !== "Live" ? (
+            <span className="project-cover__live">Live</span>
+          ) : null}
+          <span>{project.status}</span>
+        </span>
       </div>
     </div>
   );
