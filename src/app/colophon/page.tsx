@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowLink } from "@/components/arrow-link";
 import { Folio } from "@/components/folio";
-import { Monogram } from "@/components/monogram";
+import { BrandLogo } from "@/components/brand-logo";
 import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function ColophonPage() {
             </div>
             <div>
               <p className="brand-identity__lede">
-                The identity is built around the JKG monogram: a compact,
+                The identity is built around the JKG brand mark: a compact,
                 engineered mark that carries the same logic as the work —
                 structure first, expression second. The system pairs warm bone
                 paper with charcoal ink, slate structure and a copper signal.
@@ -100,7 +100,7 @@ export default function ColophonPage() {
           </div>
 
           <div className="brand-lockup">
-            <Monogram className="brand-lockup__mark" title="JKG monogram" />
+            <BrandLogo alt="" className="brand-lockup__mark" sizes="160px" />
             <div>
               <p className="mono brand-about__label">Primary mark</p>
               <p className="brand-lockup__initials">{siteConfig.shortName}</p>
@@ -163,7 +163,9 @@ export default function ColophonPage() {
           <ul>
             <li>Next.js App Router with strict TypeScript</li>
             <li>Tailwind CSS v4 with a custom token layer</li>
-            <li>Motion for restrained reveals, with reduced-motion support</li>
+            <li>
+              CSS and IntersectionObserver reveals with reduced-motion support
+            </li>
             <li>Lucide for interface icons</li>
             <li>Zod validation on the contact endpoint</li>
             <li>Static case-study routes generated from project content</li>

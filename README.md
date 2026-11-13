@@ -1,6 +1,6 @@
 # jeffkaberagitharaportfolio
 
-An editorial portfolio for **Jeff Kabera Githara**, a web developer and software engineer in Nairobi. Built with the **Next.js App Router**, **TypeScript**, **Tailwind CSS v4**, **Motion**, **Lucide** and **Zod**.
+An editorial portfolio for **Jeff Kabera Githara**, a web developer and software engineer in Nairobi. Built with the **Next.js App Router**, **TypeScript**, **Tailwind CSS v4**, **Lucide** and **Zod**.
 
 Live: [jeffkaberagitharaportfolio.vercel.app](https://jeffkaberagitharaportfolio.vercel.app)
 
@@ -16,7 +16,7 @@ Live: [jeffkaberagitharaportfolio.vercel.app](https://jeffkaberagitharaportfolio
 
 - Next.js 16 App Router · React 19 · strict TypeScript
 - Tailwind CSS v4 with a custom token layer
-- Motion for restrained reveals, with reduced-motion support
+- CSS and IntersectionObserver reveals with reduced-motion support
 - Lucide icons · Zod validation · Resend REST API (optional)
 - Fonts: Newsreader, Instrument Sans and Spline Sans Mono via `next/font`
 
@@ -49,7 +49,7 @@ Without the three contact variables, `POST /api/contact` returns `503 not_config
 ```
 src/
   app/           # routes, metadata, sitemap, robots, contact API
-  components/    # header, footer, cards, covers, forms, motion primitives
+  components/    # header, footer, cards, covers, forms, reveal primitives
   content/       # site identity, projects, journey, practice
 public/          # portraits, CV, icons and social image
 ```
