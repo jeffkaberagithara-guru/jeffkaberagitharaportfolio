@@ -91,6 +91,7 @@ export function SiteHeader() {
         className="mobile-nav"
         data-open={open}
         id="mobile-navigation"
+        inert={!open}
       >
         <nav aria-label="Mobile" className="mobile-nav__inner">
           <p className="mobile-nav__folio mono">Index / Navigation</p>
