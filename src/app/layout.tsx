@@ -28,7 +28,7 @@ const spline = Spline_Sans_Mono({
   subsets: ["latin"],
   variable: "--font-spline",
   display: "swap",
-  weight: ["400", "500"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   creator: siteConfig.name,
   keywords: [
     "Jeff Kabera Githara",
-    "JKG monogram",
+    "JKG brand mark",
     "brand identity Nairobi",
     "web developer Nairobi",
     "software engineer Kenya",
@@ -81,12 +81,19 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  manifest: "/manifest.webmanifest",
+  formatDetection: { email: false, address: false, telephone: false },
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
       { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
     ],
+    shortcut: [{ url: "/favicon.ico" }],
     apple: [
       {
         url: "/apple-touch-icon.png",
@@ -111,6 +118,8 @@ const structuredData = {
   jobTitle: siteConfig.role,
   slogan: siteConfig.brand.tagline,
   url: siteConfig.url,
+  logo: `${siteConfig.url}${siteConfig.brand.assets.logo}`,
+  image: `${siteConfig.url}${siteConfig.brand.assets.logo}`,
   email: `mailto:${siteConfig.email}`,
   address: {
     "@type": "PostalAddress",
