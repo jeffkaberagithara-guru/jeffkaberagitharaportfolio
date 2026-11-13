@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "motion/react";
+import { useReveal } from "@/lib/use-reveal";
 
 type ApertureImageProps = {
   src: string;
@@ -24,19 +24,12 @@ export function ApertureImage({
   className,
   imageClassName,
 }: ApertureImageProps) {
-  const reduceMotion = useReducedMotion();
+  const ref = useReveal<HTMLDivElement>("0px 0px -8% 0px");
 
   return (
-    <motion.div
+    <div
       className={["aperture", className].filter(Boolean).join(" ")}
-      initial={
-        reduceMotion
-          ? false
-          : { clipPath: "inset(0 0 100% 0)", scale: 1.04 }
-      }
-      transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-      whileInView={{ clipPath: "inset(0 0 0% 0)", scale: 1 }}
-      viewport={{ once: true, margin: "-40px" }}
+      ref={ref}
     >
       <Image
         alt={alt}
@@ -49,8 +42,14 @@ export function ApertureImage({
         src={src}
         width={width}
       />
-      <span aria-hidden="true" className="aperture__corner aperture__corner--tl" />
-      <span aria-hidden="true" className="aperture__corner aperture__corner--br" />
-    </motion.div>
+      <span
+        aria-hidden="true"
+        className="aperture__corner aperture__corner--tl"
+      />
+      <span
+        aria-hidden="true"
+        className="aperture__corner aperture__corner--br"
+      />
+    </div>
   );
 }
