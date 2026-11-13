@@ -57,11 +57,45 @@ function Motif({ category }: { category: Project["category"] }) {
         preserveAspectRatio="xMidYMid slice"
         viewBox="0 0 400 300"
       >
-        <circle cx="200" cy="150" r="118" stroke="currentColor" strokeOpacity="0.18" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
-        <circle cx="200" cy="150" r="92" stroke="currentColor" strokeOpacity="0.3" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
-        <circle cx="200" cy="150" r="66" stroke="currentColor" strokeWidth="0.9" vectorEffect="non-scaling-stroke" />
-        <path d="M200 32v236M82 150h236" stroke="currentColor" strokeOpacity="0.35" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
-        <path d="M200 84a66 66 0 0 1 66 66" stroke="currentColor" strokeWidth="2.4" vectorEffect="non-scaling-stroke" />
+        <circle
+          cx="200"
+          cy="150"
+          r="118"
+          stroke="currentColor"
+          strokeOpacity="0.18"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          cx="200"
+          cy="150"
+          r="92"
+          stroke="currentColor"
+          strokeOpacity="0.3"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+        />
+        <circle
+          cx="200"
+          cy="150"
+          r="66"
+          stroke="currentColor"
+          strokeWidth="0.9"
+          vectorEffect="non-scaling-stroke"
+        />
+        <path
+          d="M200 32v236M82 150h236"
+          stroke="currentColor"
+          strokeOpacity="0.35"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+        />
+        <path
+          d="M200 84a66 66 0 0 1 66 66"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          vectorEffect="non-scaling-stroke"
+        />
         <circle cx="266" cy="150" fill="currentColor" r="3.2" />
       </svg>
     );
@@ -88,7 +122,13 @@ function Motif({ category }: { category: Project["category"] }) {
           strokeWidth="0.9"
           vectorEffect="non-scaling-stroke"
         />
-        <path d="M0 228h400M0 260h400" stroke="currentColor" strokeOpacity="0.45" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
+        <path
+          d="M0 228h400M0 260h400"
+          stroke="currentColor"
+          strokeOpacity="0.45"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+        />
         <circle cx="200" cy="160" fill="currentColor" r="3.2" />
       </svg>
     );
@@ -102,10 +142,38 @@ function Motif({ category }: { category: Project["category"] }) {
         preserveAspectRatio="xMidYMid slice"
         viewBox="0 0 400 300"
       >
-        <rect height="206" stroke="currentColor" strokeOpacity="0.25" strokeWidth="0.8" vectorEffect="non-scaling-stroke" width="104" x="112" y="47" />
-        <rect height="206" stroke="currentColor" strokeWidth="0.9" vectorEffect="non-scaling-stroke" width="104" x="148" y="47" />
-        <path d="M166 72h68M166 96h48M166 120h68M166 144h36M166 168h56" stroke="currentColor" strokeOpacity="0.7" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
-        <path d="M148 228h104" stroke="currentColor" strokeWidth="1.6" vectorEffect="non-scaling-stroke" />
+        <rect
+          height="206"
+          stroke="currentColor"
+          strokeOpacity="0.25"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+          width="104"
+          x="112"
+          y="47"
+        />
+        <rect
+          height="206"
+          stroke="currentColor"
+          strokeWidth="0.9"
+          vectorEffect="non-scaling-stroke"
+          width="104"
+          x="148"
+          y="47"
+        />
+        <path
+          d="M166 72h68M166 96h48M166 120h68M166 144h36M166 168h56"
+          stroke="currentColor"
+          strokeOpacity="0.7"
+          strokeWidth="0.8"
+          vectorEffect="non-scaling-stroke"
+        />
+        <path
+          d="M148 228h104"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          vectorEffect="non-scaling-stroke"
+        />
         <circle cx="200" cy="215" fill="currentColor" r="3" />
       </svg>
     );
@@ -118,11 +186,38 @@ function Motif({ category }: { category: Project["category"] }) {
       preserveAspectRatio="xMidYMid slice"
       viewBox="0 0 400 300"
     >
-      <path d="M44 84h96M44 84v60M260 156h96M260 216h96M120 228h80" stroke="currentColor" strokeWidth="0.9" vectorEffect="non-scaling-stroke" />
+      <path
+        d="M44 84h96M44 84v60M260 156h96M260 216h96M120 228h80"
+        stroke="currentColor"
+        strokeWidth="0.9"
+        vectorEffect="non-scaling-stroke"
+      />
       <circle cx="140" cy="84" fill="currentColor" r="3" />
-      <circle cx="260" cy="216" fill="none" r="24" stroke="currentColor" strokeWidth="0.9" vectorEffect="non-scaling-stroke" />
-      <circle cx="200" cy="156" fill="none" r="5" stroke="currentColor" strokeWidth="0.9" vectorEffect="non-scaling-stroke" />
-      <path d="M44 228h40M316 84h40" stroke="currentColor" strokeOpacity="0.4" strokeWidth="0.8" vectorEffect="non-scaling-stroke" />
+      <circle
+        cx="260"
+        cy="216"
+        fill="none"
+        r="24"
+        stroke="currentColor"
+        strokeWidth="0.9"
+        vectorEffect="non-scaling-stroke"
+      />
+      <circle
+        cx="200"
+        cy="156"
+        fill="none"
+        r="5"
+        stroke="currentColor"
+        strokeWidth="0.9"
+        vectorEffect="non-scaling-stroke"
+      />
+      <path
+        d="M44 228h40M316 84h40"
+        stroke="currentColor"
+        strokeOpacity="0.4"
+        strokeWidth="0.8"
+        vectorEffect="non-scaling-stroke"
+      />
     </svg>
   );
 }

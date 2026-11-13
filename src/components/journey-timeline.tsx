@@ -9,9 +9,7 @@ export function JourneyTimeline({ milestones }: { milestones: Milestone[] }) {
       {milestones.map((milestone, index) => (
         <li className="timeline__item" id={milestone.id} key={milestone.id}>
           <div className="timeline__marker" aria-hidden="true">
-            <span className="mono">
-              {String(index + 1).padStart(2, "0")}
-            </span>
+            <span className="mono">{String(index + 1).padStart(2, "0")}</span>
           </div>
           <div className="timeline__meta">
             <p className="mono timeline__period">{milestone.period}</p>

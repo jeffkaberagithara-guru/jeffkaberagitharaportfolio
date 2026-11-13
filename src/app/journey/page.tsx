@@ -46,7 +46,10 @@ export default function JourneyPage() {
         </div>
       </header>
 
-      <div className="shell" style={{ paddingBlock: "clamp(2rem, 4vw, 3.5rem)" }}>
+      <div
+        className="shell"
+        style={{ paddingBlock: "clamp(2rem, 4vw, 3.5rem)" }}
+      >
         <JourneyTimeline milestones={milestones} />
         <p
           className="mono"

@@ -40,9 +40,11 @@ export function ContactForm() {
         }),
       });
 
-      const payload = (await response.json().catch(() => null)) as
-        | { ok?: boolean; message?: string; code?: string }
-        | null;
+      const payload = (await response.json().catch(() => null)) as {
+        ok?: boolean;
+        message?: string;
+        code?: string;
+      } | null;
 
       if (!response.ok || !payload?.ok) {
         setStatus({
@@ -81,7 +83,10 @@ export function ContactForm() {
           Thank you — the note is on its way.
         </p>
         <p>{status.message}</p>
-        <a className="button button--outline" href={`mailto:${siteConfig.email}`}>
+        <a
+          className="button button--outline"
+          href={`mailto:${siteConfig.email}`}
+        >
           Email directly instead
         </a>
       </div>
@@ -185,10 +190,7 @@ export function ContactForm() {
           <ArrowRight aria-hidden="true" size={15} strokeWidth={1.5} />
         </button>
         <p className="mono contact-form__direct">
-          or{" "}
-          <a href={`mailto:${siteConfig.email}`}>
-            {siteConfig.email}
-          </a>
+          or <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
         </p>
       </div>
     </form>

@@ -18,7 +18,9 @@ export function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <Reveal className={["section-heading", className].filter(Boolean).join(" ")}>
+    <Reveal
+      className={["section-heading", className].filter(Boolean).join(" ")}
+    >
       <div className="section-heading__lead">
         <Folio>{folio}</Folio>
         <h2 className="section-heading__title display">{title}</h2>

@@ -42,7 +42,11 @@ export const milestones: Milestone[] = [
       "Authentication, sessions and protected routes",
       "First end-to-end product flows with live deployment",
     ],
-    projectSlugs: ["carrecovery", "carrecovery-backend", "firebase-authentication"],
+    projectSlugs: [
+      "carrecovery",
+      "carrecovery-backend",
+      "firebase-authentication",
+    ],
     discipline: "Full-stack",
   },
   {
