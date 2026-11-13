@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { Monogram } from "@/components/monogram";
+import { BrandLogo } from "@/components/brand-logo";
 import { siteConfig } from "@/content/site";
 
 export function SiteHeader() {
@@ -16,12 +16,18 @@ export function SiteHeader() {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setOpen(false);
     };
+    const desktop = window.matchMedia("(min-width: 1081px)");
+    const onBreakpoint = (event: MediaQueryListEvent) => {
+      if (event.matches) setOpen(false);
+    };
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKeyDown);
+    desktop.addEventListener("change", onBreakpoint);
     return () => {
       document.body.style.overflow = previous;
       window.removeEventListener("keydown", onKeyDown);
+      desktop.removeEventListener("change", onBreakpoint);
     };
   }, [open]);
 
@@ -37,13 +43,12 @@ export function SiteHeader() {
           href="/"
           onClick={() => setOpen(false)}
         >
-          <Monogram className="site-header__mark" />
-          <span className="site-header__name">
-            <span className="site-header__initials">
-              {siteConfig.shortName}
-            </span>
-            <span className="site-header__fullname">{siteConfig.name}</span>
-          </span>
+          <BrandLogo
+            alt=""
+            className="site-header__mark"
+            priority
+            sizes="80px"
+          />
         </Link>
 
         <nav aria-label="Primary" className="site-header__nav">
@@ -106,6 +111,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <div className="mobile-nav__footer">
+            <BrandLogo alt="" className="mobile-nav__mark" sizes="120px" />
             <a className="mono" href={`mailto:${siteConfig.email}`}>
               {siteConfig.email}
             </a>

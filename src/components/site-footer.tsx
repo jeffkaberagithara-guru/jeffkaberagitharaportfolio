@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { ConstructionLines } from "@/components/construction-lines";
-import { Monogram } from "@/components/monogram";
+import { BrandLogo } from "@/components/brand-logo";
 import { siteConfig } from "@/content/site";
 
 export function SiteFooter() {
@@ -11,7 +11,14 @@ export function SiteFooter() {
       <div className="shell">
         <div className="site-footer__top">
           <div className="site-footer__identity">
-            <Monogram className="site-footer__mark" />
+            <span className="site-footer__logo">
+              <BrandLogo
+                alt=""
+                className="site-footer__mark"
+                sizes="160px"
+                variant="light"
+              />
+            </span>
             <p className="mono site-footer__tagline">
               {siteConfig.brand.tagline}
             </p>
@@ -79,10 +86,6 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-
-        <p aria-hidden="true" className="site-footer__wordmark display">
-          {siteConfig.shortName}
-        </p>
 
         <div className="site-footer__bottom mono">
           <p>

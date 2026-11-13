@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import { Monogram } from "@/components/monogram";
+import { BrandLogo } from "@/components/brand-logo";
 
 export default function ErrorPage({
   error,
@@ -43,7 +43,7 @@ export default function ErrorPage({
           </div>
         </div>
         <div className="not-found__side">
-          <Monogram className="not-found__mark" title="JKG monogram" />
+          <BrandLogo alt="" className="not-found__mark" sizes="80px" />
           <p className="mono not-found__note">
             Error / Client boundary
             {error.digest ? (

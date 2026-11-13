@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowLink } from "@/components/arrow-link";
 import { Folio } from "@/components/folio";
-import { Monogram } from "@/components/monogram";
+import { BrandLogo } from "@/components/brand-logo";
 import { milestones } from "@/content/journey";
 import { capabilities, toolkit } from "@/content/practice";
 import { featuredProjects } from "@/content/projects";
@@ -33,7 +33,7 @@ export default function CvPage() {
 
       <div className="cv">
         <aside className="cv__side">
-          <Monogram className="cv__mark" title="JKG monogram" />
+          <BrandLogo alt="" className="cv__mark" sizes="96px" />
           <h1 className="cv__name">{siteConfig.name}</h1>
           <p className="cv__role">{siteConfig.role}</p>
           <p className="mono cv__tagline">{siteConfig.brand.tagline}</p>
