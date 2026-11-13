@@ -13,6 +13,7 @@ const contactSchema = z.object({
 
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS = 5;
+const MAX_TRACKED = 5000;
 const attempts = new Map<string, { count: number; resetAt: number }>();
 
 function getIp(request: Request) {
@@ -21,14 +22,23 @@ function getIp(request: Request) {
   return request.headers.get("x-real-ip") ?? "unknown";
 }
 
+function pruneAttempts(now: number) {
+  if (attempts.size <= 1000) return;
+
+  for (const [key, value] of attempts) {
+    if (value.resetAt < now) attempts.delete(key);
+  }
+
+  while (attempts.size > MAX_TRACKED) {
+    const oldest = attempts.keys().next().value;
+    if (oldest === undefined) break;
+    attempts.delete(oldest);
+  }
+}
+
 function rateLimited(ip: string) {
   const now = Date.now();
-
-  if (attempts.size > 1000) {
-    for (const [key, value] of attempts) {
-      if (value.resetAt < now) attempts.delete(key);
-    }
-  }
+  pruneAttempts(now);
 
   const entry = attempts.get(ip);
 
