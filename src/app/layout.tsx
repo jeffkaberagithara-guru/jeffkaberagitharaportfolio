@@ -118,9 +118,9 @@ const structuredData = {
   jobTitle: siteConfig.role,
   slogan: siteConfig.brand.tagline,
   url: siteConfig.url,
-  logo: `${siteConfig.url}${siteConfig.brand.assets.logo}`,
-  image: `${siteConfig.url}${siteConfig.brand.assets.logo}`,
-  email: `mailto:${siteConfig.email}`,
+  logo: `${siteConfig.url}${siteConfig.brand.assets.logoPng}`,
+  image: `${siteConfig.url}/og-image.jpg`,
+  email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Nairobi",
