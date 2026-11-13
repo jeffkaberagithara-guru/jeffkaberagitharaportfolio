@@ -120,7 +120,7 @@ export const milestones: Milestone[] = [
     summary:
       "This portfolio is the current expression of the practice: editorial typography, real project evidence and a design system built to hold work across product, brand and infrastructure.",
     points: [
-      "Next.js App Router, TypeScript, Tailwind and Motion",
+      "Next.js App Router, TypeScript and Tailwind, with CSS-driven reveals",
       "A reusable editorial design system",
       "A public record that is honest about what is live, what is a prototype and what is still in development",
     ],
