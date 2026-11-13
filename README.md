@@ -40,6 +40,8 @@ NEXT_PUBLIC_SITE_URL=https://jeffkaberagitharaportfolio.vercel.app
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=jeffkaberagithara@gmail.com
 CONTACT_FROM_EMAIL=portfolio@your-verified-domain.com
+# Optional: override the public contact address shown in the interface.
+NEXT_PUBLIC_CONTACT_EMAIL=jeffkaberagithara@gmail.com
 ```
 
 Without the three contact variables, `POST /api/contact` returns `503 not_configured` and the form directs the visitor to email. It never reports a false success.
