@@ -641,6 +641,9 @@ const legacyCategoryMap: Record<string, ProjectCategory> = {
   fullstack: "systems",
   mobile: "mobile",
   learning: "experiments",
+  product: "product",
+  systems: "systems",
+  experiments: "experiments",
 };
 
 const slugify = (value: string) =>
