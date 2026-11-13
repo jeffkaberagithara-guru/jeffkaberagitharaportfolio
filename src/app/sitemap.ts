@@ -6,14 +6,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticRoutes = ["", "/work", "/about", "/journey", "/contact", "/cv", "/colophon"].map(
-    (path) => ({
-      url: `${base}${path}`,
-      lastModified: now,
-      changeFrequency: path === "" || path === "/work" ? "monthly" : "yearly",
-      priority: path === "" ? 1 : path === "/work" ? 0.9 : 0.7,
-    }),
-  ) as MetadataRoute.Sitemap;
+  const staticRoutes = [
+    "",
+    "/work",
+    "/about",
+    "/journey",
+    "/contact",
+    "/cv",
+    "/colophon",
+  ].map((path) => ({
+    url: `${base}${path}`,
+    lastModified: now,
+    changeFrequency: path === "" || path === "/work" ? "monthly" : "yearly",
+    priority: path === "" ? 1 : path === "/work" ? 0.9 : 0.7,
+  })) as MetadataRoute.Sitemap;
 
   const projectRoutes: MetadataRoute.Sitemap = allProjects.map((project) => ({
     url: `${base}/work/${project.slug}`,
