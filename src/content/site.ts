@@ -38,6 +38,13 @@ export const siteConfig = {
       },
     ],
     assets: {
+      logo: "/brand/jkg-monogram.svg",
+      logoAlt: "Jeff Kabera Githara — JKG monogram",
+      logoHeight: 493,
+      logoPng: "/brand/jkg-monogram.png",
+      logoSource: "/LogoFinal.jpg",
+      logoSvg: "/brand/jkg-monogram.svg",
+      logoWidth: 982,
       mark: "/brand/jkg-monogram.svg",
       markLight: "/brand/jkg-monogram-light.svg",
       strategy: "/brand/brand-strategy.jpg",
