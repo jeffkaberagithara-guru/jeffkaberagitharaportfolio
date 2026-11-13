@@ -23,6 +23,13 @@ function getIp(request: Request) {
 
 function rateLimited(ip: string) {
   const now = Date.now();
+
+  if (attempts.size > 1000) {
+    for (const [key, value] of attempts) {
+      if (value.resetAt < now) attempts.delete(key);
+    }
+  }
+
   const entry = attempts.get(ip);
 
   if (!entry || entry.resetAt < now) {
