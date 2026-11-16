@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { ArrowLink } from "@/components/arrow-link";
 import { ApertureImage } from "@/components/aperture-image";
 import { ConstructionLines } from "@/components/construction-lines";
@@ -47,9 +49,10 @@ export default function HomePage() {
                 the work holds up after launch.
               </p>
               <div className="hero__actions">
-                <ArrowLink className="button button--solid" href="/work">
-                  Selected work
-                </ArrowLink>
+                <Link className="hero__cta-primary" href="/work">
+                  <span>Selected work</span>
+                  <ArrowRight aria-hidden="true" size={15} strokeWidth={1.5} />
+                </Link>
                 <ArrowLink href="/about">More about the practice</ArrowLink>
               </div>
             </div>
