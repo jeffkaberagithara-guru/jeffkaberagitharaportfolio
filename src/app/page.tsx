@@ -51,7 +51,7 @@ export default function HomePage() {
               <div className="hero__actions">
                 <Link className="hero__cta-primary" href="/work">
                   <span>Selected work</span>
-                  <ArrowRight aria-hidden="true" size={15} strokeWidth={1.5} />
+                  <ArrowRight aria-hidden="true" size={18} strokeWidth={2} />
                 </Link>
                 <ArrowLink href="/about">More about the practice</ArrowLink>
               </div>
