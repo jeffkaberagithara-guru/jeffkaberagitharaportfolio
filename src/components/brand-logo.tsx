@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { siteConfig } from "@/content/site";
 
 type BrandLogoProps = {
@@ -13,20 +12,19 @@ export function BrandLogo({
   alt,
   className,
   priority,
-  sizes = "96px",
   variant = "dark",
 }: BrandLogoProps) {
   const { assets } = siteConfig.brand;
 
   return (
-    <Image
+    <img
       alt={alt ?? assets.logoAlt}
       className={className ? `brand-logo ${className}` : "brand-logo"}
+      decoding="async"
+      fetchPriority={priority ? "high" : undefined}
       height={assets.logoHeight}
-      priority={priority}
-      sizes={sizes}
+      loading={priority ? "eager" : "lazy"}
       src={variant === "light" ? assets.markLight : assets.mark}
-      unoptimized
       width={assets.logoWidth}
     />
   );
