@@ -894,59 +894,30 @@ em {
 .hero__actions .hero__cta-primary,
 .hero__actions .hero__cta-primary:visited {
   align-items: center;
-  background: var(--slate);
-  border: 1.5px solid var(--slate);
-  border-radius: 999px;
-  box-shadow:
-    0 6px 0 #223142,
-    0 14px 24px -12px rgba(46, 64, 86, 0.55);
-  color: var(--paper);
-  cursor: pointer;
+  color: var(--ink);
   display: inline-flex;
   font-family: var(--font-mono);
   font-size: 0.74rem;
   font-weight: 600;
-  gap: 0.65rem;
-  justify-content: center;
+  gap: 0.6rem;
   letter-spacing: 0.14em;
-  min-height: 3.1rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
+  min-height: 3rem;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
   text-transform: uppercase;
-  transform: translateY(0);
+  text-underline-offset: 0.3em;
   transition:
-    background 0.22s var(--ease-out),
-    border-color 0.22s var(--ease-out),
-    box-shadow 0.22s var(--ease-out),
     color 0.22s var(--ease-out),
-    transform 0.18s var(--ease-out);
+    text-decoration-color 0.22s var(--ease-out),
+    text-underline-offset 0.22s var(--ease-out);
 }
 
 .hero__actions .hero__cta-primary:hover,
 .hero__actions .hero__cta-primary:focus-visible {
-  background: var(--copper);
-  border-color: #9a5f34;
-  box-shadow:
-    0 8px 0 #8f5527,
-    0 0 0 4px color-mix(in srgb, var(--copper) 22%, transparent),
-    0 20px 34px -14px rgba(184, 117, 69, 0.55);
-  color: #fffdf8;
-  text-decoration: none;
-  transform: translateY(-2px);
-}
-
-.hero__actions .hero__cta-primary:active {
-  background: var(--copper-ink);
-  border-color: #7a4620;
-  box-shadow:
-    0 2px 0 #6d3d1b,
-    0 8px 16px -10px rgba(143, 85, 39, 0.5);
-  color: #fffdf8;
-  transform: translateY(4px);
-}
-
-.hero__actions .hero__cta-primary:focus-visible {
-  outline: none;
+  color: var(--cobalt);
+  text-decoration-color: var(--cobalt);
+  text-underline-offset: 0.45em;
 }
 
 .hero__actions .hero__cta-primary::after,
@@ -961,7 +932,7 @@ em {
 
 .hero__actions .hero__cta-primary:hover svg,
 .hero__actions .hero__cta-primary:focus-visible svg {
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 
 .hero__actions .hero__cta-primary:active svg {
