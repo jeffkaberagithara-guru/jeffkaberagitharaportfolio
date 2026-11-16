@@ -894,7 +894,9 @@ em {
 .hero .hero__actions a.hero__cta-primary,
 .hero .hero__actions a.hero__cta-primary:visited {
   align-items: center;
-  color: var(--ink) !important;
+  background: var(--ink);
+  border-radius: 999px;
+  color: var(--paper) !important;
   display: inline-flex;
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -902,23 +904,21 @@ em {
   gap: 0.6rem;
   letter-spacing: 0.14em;
   min-height: 3rem;
-  text-decoration-line: underline !important;
-  text-decoration-color: transparent !important;
-  text-decoration-thickness: 2px !important;
+  padding: 0.85rem 1.5rem;
+  text-decoration: none !important;
   text-transform: uppercase;
-  text-underline-offset: 0.3em !important;
   transition:
-    color 0.2s var(--ease-out),
-    text-decoration-color 0.2s var(--ease-out),
-    text-underline-offset 0.2s var(--ease-out);
+    background 0.22s var(--ease-out),
+    box-shadow 0.22s var(--ease-out),
+    transform 0.22s var(--ease-out);
 }
 
 .hero .hero__actions a.hero__cta-primary:hover,
 .hero .hero__actions a.hero__cta-primary:focus-visible {
-  color: var(--copper-ink) !important;
-  text-decoration-line: underline !important;
-  text-decoration-color: var(--copper) !important;
-  text-underline-offset: 0.5em !important;
+  background: var(--copper);
+  box-shadow: 0 10px 24px -12px rgba(184, 117, 69, 0.55);
+  color: var(--paper) !important;
+  transform: translateY(-2px);
 }
 
 .hero__actions .hero__cta-primary::after,
