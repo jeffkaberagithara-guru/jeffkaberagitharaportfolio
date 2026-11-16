@@ -891,10 +891,10 @@ em {
   margin-top: 2.2rem;
 }
 
-.hero__actions .hero__cta-primary,
-.hero__actions .hero__cta-primary:visited {
+.hero .hero__actions a.hero__cta-primary,
+.hero .hero__actions a.hero__cta-primary:visited {
   align-items: center;
-  color: var(--ink);
+  color: var(--ink) !important;
   display: inline-flex;
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -902,22 +902,23 @@ em {
   gap: 0.6rem;
   letter-spacing: 0.14em;
   min-height: 3rem;
-  text-decoration-line: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 2px;
+  text-decoration-line: underline !important;
+  text-decoration-color: transparent !important;
+  text-decoration-thickness: 2px !important;
   text-transform: uppercase;
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.3em !important;
   transition:
-    color 0.22s var(--ease-out),
-    text-decoration-color 0.22s var(--ease-out),
-    text-underline-offset 0.22s var(--ease-out);
+    color 0.2s var(--ease-out),
+    text-decoration-color 0.2s var(--ease-out),
+    text-underline-offset 0.2s var(--ease-out);
 }
 
-.hero__actions .hero__cta-primary:hover,
-.hero__actions .hero__cta-primary:focus-visible {
-  color: var(--cobalt);
-  text-decoration-color: var(--cobalt);
-  text-underline-offset: 0.45em;
+.hero .hero__actions a.hero__cta-primary:hover,
+.hero .hero__actions a.hero__cta-primary:focus-visible {
+  color: var(--copper-ink) !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--copper) !important;
+  text-underline-offset: 0.5em !important;
 }
 
 .hero__actions .hero__cta-primary::after,
@@ -925,18 +926,14 @@ em {
   content: none;
 }
 
-.hero__actions .hero__cta-primary svg {
+.hero .hero__actions a.hero__cta-primary svg {
   color: currentColor;
-  transition: transform 0.22s var(--ease-out);
+  transition: transform 0.2s var(--ease-out);
 }
 
-.hero__actions .hero__cta-primary:hover svg,
-.hero__actions .hero__cta-primary:focus-visible svg {
-  transform: translateX(4px);
-}
-
-.hero__actions .hero__cta-primary:active svg {
-  transform: translateX(2px);
+.hero .hero__actions a.hero__cta-primary:hover svg,
+.hero .hero__actions a.hero__cta-primary:focus-visible svg {
+  transform: translateX(3px);
 }
 
 .hero__portrait {
