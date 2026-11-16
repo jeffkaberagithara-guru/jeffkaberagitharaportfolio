@@ -928,12 +928,12 @@ em {
 
 .hero .hero__actions a.hero__cta-primary svg {
   color: currentColor;
-  transition: transform 0.2s var(--ease-out);
+  transition: transform 0.22s var(--ease-out);
 }
 
 .hero .hero__actions a.hero__cta-primary:hover svg,
 .hero .hero__actions a.hero__cta-primary:focus-visible svg {
-  transform: translateX(3px);
+  transform: translateX(5px);
 }
 
 .hero__portrait {
