@@ -7,6 +7,10 @@ const eslintConfig = [
   {
     ignores: ["node_modules/**", ".next/**", "dist/**"],
   },
+  {
+    files: ["src/components/brand-logo.tsx"],
+    rules: { "@next/next/no-img-element": "off" },
+  },
 ];
 
 export default eslintConfig;
