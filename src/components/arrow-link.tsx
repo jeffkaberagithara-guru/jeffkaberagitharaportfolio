@@ -27,10 +27,17 @@ export function ArrowLink({
     ) : (
       <ArrowRight aria-hidden="true" size={15} strokeWidth={1.5} />
     );
+  const isMailOrTel = /^(mailto:|tel:)/i.test(href);
+  const opensNewTab = external && !isMailOrTel;
 
-  if (external) {
+  if (external || isMailOrTel) {
     return (
-      <a className={classes} href={href} rel="noreferrer" target="_blank">
+      <a
+        className={classes}
+        href={href}
+        {...(opensNewTab ? { rel: "noreferrer", target: "_blank" } : {})}
+        {...rest}
+      >
         <span>{children}</span>
         {glyph}
       </a>
