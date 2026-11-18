@@ -8,6 +8,7 @@
   --slate: #2e4056;
   --copper: #b87545;
   --copper-ink: #8f5527;
+  --copper-deep: #6d3d1b;
   --paper: var(--bone);
   --paper-soft: var(--parchment);
   --gallery-white: #ffffff;
@@ -1141,17 +1142,22 @@ em {
 
 .project-cover__live {
   align-items: center;
-  color: var(--copper);
+  color: inherit;
   display: inline-flex;
   gap: 0.3rem;
 }
 
 .project-cover__live::before {
-  background: currentColor;
+  background: var(--copper);
   border-radius: 50%;
   content: "";
   height: 0.35rem;
   width: 0.35rem;
+}
+
+.project-cover[data-category="product"] .project-cover__live::before,
+.project-cover[data-category="systems"] .project-cover__live::before {
+  background: #e8b48c;
 }
 
 .project-cover__art {
