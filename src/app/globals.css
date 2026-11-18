@@ -1321,9 +1321,9 @@ em {
 }
 
 .project-card__live:hover {
-  background: var(--copper);
-  border-color: var(--copper);
-  box-shadow: 0 10px 22px -14px rgba(184, 117, 69, 0.6);
+  background: var(--copper-ink);
+  border-color: var(--copper-ink);
+  box-shadow: 0 10px 22px -14px rgba(143, 85, 39, 0.6);
   color: var(--paper);
   transform: translateY(-2px);
 }
