@@ -9,7 +9,7 @@ type ArrowLinkProps = {
   external?: boolean;
   arrow?: "right" | "up-right" | "none";
   download?: boolean;
-} & Omit<ComponentProps<typeof Link>, "href" | "children" | "download">;
+} & Omit<ComponentProps<"a">, "href" | "children" | "download">;
 
 export function ArrowLink({
   href,
