@@ -141,6 +141,8 @@ const structuredData = {
   ],
 };
 
+const jsonLd = JSON.stringify(structuredData).replace(/</g, "\\u003c");
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -159,7 +161,7 @@ export default function RootLayout({
         <SiteFooter />
         <ScrollToTop />
         <script
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
           type="application/ld+json"
         />
       </body>
