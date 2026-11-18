@@ -714,6 +714,16 @@ em {
   transform: scale(0.985);
 }
 
+.button.button--solid,
+.button.button--solid:visited {
+  color: var(--paper);
+}
+
+.button.button--solid:hover,
+.button.button--solid:active {
+  color: var(--ink);
+}
+
 .arrow-link.button svg {
   transition: transform 0.22s var(--ease-out);
 }
