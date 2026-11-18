@@ -1496,6 +1496,17 @@ em {
   margin-top: 0.6rem;
 }
 
+.statement .arrow-link {
+  border-color: rgba(250, 249, 245, 0.45);
+  color: var(--paper);
+}
+
+.statement .arrow-link:hover,
+.statement .arrow-link:focus-visible {
+  border-color: var(--cobalt-highlight);
+  color: var(--cobalt-highlight);
+}
+
 /* ---------- Journey preview ---------- */
 
 .journey-preview {
