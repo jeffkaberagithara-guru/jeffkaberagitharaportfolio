@@ -934,22 +934,22 @@ em {
 
 .hero .hero__actions a.hero__cta-primary:hover,
 .hero .hero__actions a.hero__cta-primary:focus-visible {
-  background: var(--copper);
-  border-color: var(--copper);
+  background: var(--copper-ink);
+  border-color: var(--copper-ink);
   box-shadow:
     0 1px 0 rgba(255, 253, 248, 0.15) inset,
     0 0 0 4px color-mix(in srgb, var(--copper) 22%, transparent),
-    0 16px 30px -14px rgba(184, 117, 69, 0.55);
+    0 16px 30px -14px rgba(143, 85, 39, 0.55);
   color: #fffdf8 !important;
   transform: translateY(-2px);
 }
 
 .hero .hero__actions a.hero__cta-primary:active {
-  background: var(--copper-ink);
-  border-color: var(--copper-ink);
+  background: var(--copper-deep);
+  border-color: var(--copper-deep);
   box-shadow:
     0 1px 0 rgba(255, 253, 248, 0.08) inset,
-    0 6px 16px -10px rgba(143, 85, 39, 0.55);
+    0 6px 16px -10px rgba(109, 61, 27, 0.55);
   color: #fffdf8 !important;
   transform: translateY(0) scale(0.98);
 }
